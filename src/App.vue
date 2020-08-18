@@ -9,7 +9,7 @@
         fixed
         bottom
         right
-        color="rgb(222, 175, 22)"
+        color="primary"
         @click="toTop"
       >
         <v-icon>keyboard_arrow_up</v-icon>
@@ -54,9 +54,9 @@
                 <a
                   class="text-styling font-weight-bold dark-link-text"
                   target="_blank"
-                  href="mailto:info.requiro@gmail.com"
+                  href="mailto:info@d1gital.com"
                 >
-                  info.requiro@gmail.com
+                  info@d1gital.com
                 </a>
               </v-list-item-title>
             </v-list-item-content>
@@ -88,15 +88,15 @@
         >
         <v-spacer></v-spacer>
         <v-avatar size="70">
-          <v-img :src="require('@/assets/RequiroShortLogo.png')"></v-img>
+          <v-img :src="require('@/assets/Placeholder.png')"></v-img>
         </v-avatar>
       </template>
       <template v-else>
         <v-img
-          :src="require('@/assets/RequiroLogo.png')"
-          max-width="200px"
+          :src="require('@/assets/Placeholder.png')"
+          max-width="90px"
           max-height="90px"
-          alt="Requiro Logo"
+          alt="d1gital Logo"
         ></v-img>
         <v-spacer></v-spacer>
         <template v-if="!$vuetify.breakpoint.smAndDown">
@@ -136,23 +136,7 @@
       "
       class="footer px-0 pb-5"
     >
-      <img
-        :src="require('@/assets/blobs/BottomBlob.png')"
-        class="footer-img hidden-md-and-down"
-        height="250px"
-        width="100%"
-      />
       <v-layout justify-center align-end wrap class="z-index-1">
-        <v-flex xs12 sm2 mx-12 my-4 class="align-center text-center">
-          <router-link :to="'/'">
-            <v-img
-              :src="require('@/assets/RequiroLogo.png')"
-              width="100%"
-              max-height="90px"
-              alt="Requiro Logo"
-            ></v-img>
-          </router-link>
-        </v-flex>
         <v-flex xs12 sm2 mx-12 my-4 class="align-center text-center">
           <p class="grey-text font-weight-bold mb-0">
             About
@@ -160,26 +144,17 @@
           <a
             class="text-styling grey-link-color font-weight-bold mb-0"
             target="_blank"
-            href="mailto:info.requiro@gmail.com"
+            href="mailto:info@d1gital.com"
           >
-            info.requiro@gmail.com
+            info@d1gital.com
           </a>
           <br />
           <p class="text-styling grey-link-color mb-0">
-            Slavonska avenija 1C, 10 000 Zagreb
+            Kaptol Zagreb, 10 000 Zagreb
           </p>
           <p class="text-styling grey-link-color mb-0">
-            © {{ new Date().getFullYear() }} Requiro d.o.o.
+            © {{ new Date().getFullYear() }} d1gital d.o.o.
           </p>
-          <a
-            class="text-styling grey-link-color font-weight-bold d-inline-block mt-1 mb-0"
-            href="https://www.linkedin.com/company/requiro-d-o-o/about/"
-            target="_blank"
-          >
-            <v-icon dark size="16" color="#909090" class="bottom-2px">
-              mdi-linkedin
-            </v-icon>
-          </a>
         </v-flex>
       </v-layout>
     </v-footer>
@@ -332,7 +307,7 @@ export default {
     width: 100%;
     height: 3px;
     transform: scaleX(0);
-    background-color: #ffc535;
+    background-color: #1976d2;
     transition: transform 0.3s;
   }
 

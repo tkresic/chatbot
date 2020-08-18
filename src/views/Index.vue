@@ -1,15 +1,10 @@
 <template>
   <v-row class="bg">
     <v-col class="py-0">
-      <v-img
-        :src="require('@/assets/blobs/TopBlob.png')"
-        class="header-img"
-        :width="$vuetify.breakpoint.mdAndDown ? '100%' : '65%'"
-      ></v-img>
       <v-row
         align="center"
         justify="center"
-        class="min-height-1000px margin-top-100px"
+        class="min-height-750px margin-top-100px"
       >
         <v-col
           cols="12"
@@ -18,14 +13,14 @@
           :class="{ 'header-img-position': $vuetify.breakpoint.smAndDown }"
         >
           <img
-            :src="require('@/assets/HeaderImage.jpeg')"
+            :src="require('@/assets/Placeholder.png')"
             height="300px"
             class="border-radius-15px"
           />
         </v-col>
         <v-col cols="12" md="6" class="z-index-1 text-center text-md-left px-6">
           <div
-            class="title-position"
+            class="title-position mb-4"
             :class="{
               'font-size-60px': $vuetify.breakpoint.lgAndDown,
               'font-size-96px': $vuetify.breakpoint.xl,
@@ -35,46 +30,18 @@
                 $vuetify.breakpoint.md || $vuetify.breakpoint.lg
             }"
           >
-            <span class="font-weight-bold text-uppercase">Requiro </span>
-            <br v-if="$vuetify.breakpoint.xs" />
-            <span :class="{ 'agency-position': $vuetify.breakpoint.xs }"
-              >Agency</span
-            >
+            <span class="font-weight-bold">d1gital</span>
           </div>
           <br />
-          <span
-            class="d-inline-block font-size-34px grey--text"
-            :class="{ 'mt-10': $vuetify.breakpoint.smAndDown }"
-          >
-            CHOOSE THE RIGHT FREIGHT FORWARDING PARTNER
-          </span>
-          <br />
           <span class="grey--text">
-            Building a right freight forwarding agency business is one of the
-            most important tasks for every freight forwarder.
+              Maecenas ut risus venenatis, dapibus lectus ut, porttitor turpis. Nulla ornare metus sed lacus facilisis fermentum. Aliquam hendrerit ut nunc non fringilla. Etiam arcu odio, sagittis sed metus non, mattis molestie diam. Duis id elit scelerisque, sollicitudin leo sit amet, dapibus mi. In nibh ex, accumsan quis gravida in, faucibus vel dolor. Aliquam at semper turpis. Cras fringilla ipsum eget massa interdum, vitae malesuada mauris lacinia. Quisque egestas eros leo. Nam euismod tristique erat, sed sodales ante. Integer est ex, congue ut elit at, blandit imperdiet nisl.
           </span>
           <br />
-          <v-btn
-            color="rgb(222, 175, 22)"
-            dark
-            :class="{
-              'mt-2': $vuetify.breakpoint.mdAndUp,
-              'mt-8': $vuetify.breakpoint.smAndDown
-            }"
-            href="mailto:info.requiro@gmail.com"
-            target="_blank"
-          >
-            Send us your request
-          </v-btn>
         </v-col>
-        <v-img
-          :src="require('@/assets/blobs/FirstRightBlob.png')"
-          class="first-right-blob hidden-sm-and-down"
-        ></v-img>
       </v-row>
       <v-row
         justify="center"
-        class="min-height-1000px"
+        class="min-height-750px"
         :class="{ 'margin-top-100px': $vuetify.breakpoint.xsOnly }"
       >
         <v-col cols="12" class="text-center" align-self="center">
@@ -107,11 +74,6 @@
         </v-col>
       </v-row>
       <v-row justify="center" align="center" class="row-margin">
-        <v-img
-          :src="require('@/assets/blobs/LeftBlob.png')"
-          class="left-blob hidden-sm-and-down"
-          width="10%"
-        ></v-img>
         <v-col
           cols="12"
           md="4"
@@ -121,7 +83,7 @@
           <v-row class="justify-center justify-md-start">
             <v-col cols="auto" class="text-center">
               <img
-                :src="require('@/assets/FirstSectionImage.jpeg')"
+                :src="require('@/assets/Placeholder.png')"
                 width="400px"
               />
             </v-col>
@@ -135,7 +97,7 @@
           :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
           v-animate.fade="'slide-up'"
         >
-          <h1>Transport</h1>
+          <h1>Service 1</h1>
           <p class="grey--text">
             Phasellus ornare, leo in vehicula ultrices, ipsum eros vulputate
             neque, a eleifend est nunc non velit. Nulla facilisi. Suspendisse
@@ -162,7 +124,7 @@
           :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
           v-animate.fade="'slide-up'"
         >
-          <h1>Special Transport</h1>
+          <h1>Service 2</h1>
           <p class="grey--text">
             Phasellus ornare, leo in vehicula ultrices, ipsum eros vulputate
             neque, a eleifend est nunc non velit. Nulla facilisi. Suspendisse
@@ -189,7 +151,7 @@
           <v-row class="justify-center justify-md-end">
             <v-col cols="auto" class="text-center">
               <img
-                :src="require('@/assets/SecondSectionImage.jpeg')"
+                :src="require('@/assets/Placeholder.png')"
                 width="400px"
               />
             </v-col>
@@ -197,11 +159,6 @@
         </v-col>
       </v-row>
       <v-row justify="center" align="center" class="row-margin">
-        <v-img
-          :src="require('@/assets/blobs/SecondRightBlob.png')"
-          class="second-right-blob hidden-sm-and-down"
-          width="10%"
-        ></v-img>
         <v-col
           cols="12"
           md="4"
@@ -211,7 +168,7 @@
           <v-row class="justify-center justify-md-start">
             <v-col cols="auto" class="text-center">
               <img
-                :src="require('@/assets/ThirdSectionImage.jpeg')"
+                :src="require('@/assets/Placeholder.png')"
                 width="400px"
               />
             </v-col>
@@ -225,7 +182,7 @@
           v-animate.fade="'slide-up'"
           :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
         >
-          <h1>Groupage Transport</h1>
+          <h1>Service 3</h1>
           <p class="grey--text">
             Phasellus ornare, leo in vehicula ultrices, ipsum eros vulputate
             neque, a eleifend est nunc non velit. Nulla facilisi. Suspendisse
@@ -254,22 +211,19 @@ export default {
     return {
       services: [
         {
-          title: "Transport",
-          text:
-            "Quality partnership generates high revenue for every freight forwarding organization.",
-          img: "Transport.png"
+          title: "Service 1",
+          text: "Praesent eget eros sed tortor interdum molestie. Integer in est sed felis posuere sollicitudin.",
+          img: "Placeholder.png"
         },
         {
-          title: "Forwarding Agency Consultation",
-          text:
-            "The freight forwarding agency industry is one of the most competitive industries in the world.",
-          img: "ForwardingAgencyConsultation.png"
+          title: "Service 2",
+          text: "Praesent eget eros sed tortor interdum molestie. Integer in est sed felis posuere sollicitudin.",
+          img: "Placeholder.png"
         },
         {
-          title: "Special Transport",
-          text:
-            "Every freight forwarder must be careful about choosing right partners.",
-          img: "SpecialTransport.png"
+          title: "Service 3",
+          text: "Praesent eget eros sed tortor interdum molestie. Integer in est sed felis posuere sollicitudin.",
+          img: "Placeholder.png"
         }
       ]
     };
@@ -302,22 +256,6 @@ p {
   left: 0;
 }
 
-.left-blob {
-  position: absolute !important;
-  left: 0;
-}
-
-.first-right-blob {
-  position: absolute !important;
-  top: 800px;
-  right: 0;
-}
-
-.second-right-blob {
-  position: absolute !important;
-  right: 0;
-}
-
 .font-size-16px {
   font-size: 16px !important;
 }
@@ -326,8 +264,8 @@ p {
   font-size: 34px !important;
 }
 
-.min-height-1000px {
-  min-height: 1000px;
+.min-height-750px {
+  min-height: 750px;
 }
 
 .font-size-60px {
