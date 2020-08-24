@@ -4,7 +4,7 @@
       <v-row
         align="center"
         justify="center"
-        class="min-height-1000px margin-top-100px"
+        class="min-height-750px margin-top-100px"
       >
         <v-col cols="12" md="6" class="z-index-1 text-center text-md-left px-6">
           <h1>About Us</h1>
@@ -70,8 +70,8 @@ p {
   font-size: 34px !important;
 }
 
-.min-height-1000px {
-  min-height: 1000px;
+.min-height-750px {
+  min-height: 750px;
 }
 
 .font-size-60px {
