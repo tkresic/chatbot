@@ -92,12 +92,14 @@
         </v-avatar>
       </template>
       <template v-else>
-        <v-img
-            :src="require('@/assets/Placeholder.png')"
-            max-width="90px"
-            max-height="90px"
-            alt="d1gital Logo"
-        ></v-img>
+        <a href="https://d1gital.hr">
+          <v-img
+              :src="require('@/assets/Placeholder.png')"
+              max-width="90px"
+              max-height="90px"
+              alt="d1gital Logo"
+          ></v-img>
+        </a>
         <v-spacer></v-spacer>
         <template v-if="!$vuetify.breakpoint.smAndDown">
           <v-btn
