@@ -2,31 +2,15 @@
   <v-row class="bg">
     <v-col class="py-0">
       <v-row
-        align="center"
-        justify="center"
-        class="min-height-750px margin-top-100px"
+          align="center"
+          justify="center"
+          class="min-height-750px margin-top-100px"
       >
         <v-col cols="12" md="6" class="z-index-1 text-center text-md-left px-6">
           <h1>About Us</h1>
           <span class="grey--text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a tincidunt diam, non euismod risus. Proin ultricies luctus libero, sit amet tristique nisi pretium sed. Integer aliquet lacinia diam, eget euismod ligula sagittis et. Aenean eu dolor pellentesque, commodo elit luctus, laoreet neque. Maecenas ac libero posuere, eleifend neque id, consectetur dui. Integer id orci eget risus hendrerit mollis. Donec risus arcu, efficitur tempus velit id, rhoncus pretium lacus. Nullam ante ligula, convallis vel volutpat ac, volutpat non erat. Nullam a nunc eros. Cras pharetra aliquet mi, vitae fringilla nibh volutpat eget. Phasellus vulputate risus eget cursus porttitor. Vivamus faucibus, erat vitae gravida sagittis, risus tellus bibendum justo, in sagittis nunc lacus vitae lorem. Aliquam erat volutpat.
           </span>
-        </v-col>
-      </v-row>
-      <v-row justify="center" align="center" class="row-margin">
-        <v-col cols="12" class="text-center" align-self="center">
-          <h2 class="titles text-uppercase font-weight-bold mb-3">Visit Us</h2>
-          <div class="divider"></div>
-        </v-col>
-        <v-col cols="12 px-0">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11122.176248691876!2d15.968782887487876!3d45.8203888698267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7026979b4e5%3A0x762337148a6fa395!2sKaptol%2C%2010000%2C%20Zagreb!5e0!3m2!1sen!2shr!4v1597783270421!5m2!1sen!2shr"
-            width="100%"
-            height="450"
-            frameborder="0"
-            style="border:0;"
-            allowfullscreen=""
-          ></iframe>
         </v-col>
       </v-row>
     </v-col>

@@ -2,48 +2,48 @@
   <v-app>
     <v-fab-transition>
       <v-btn
-        v-scroll="onScroll"
-        v-show="fab"
-        fab
-        dark
-        fixed
-        bottom
-        right
-        color="primary"
-        @click="toTop"
+          v-scroll="onScroll"
+          v-show="fab"
+          fab
+          dark
+          fixed
+          bottom
+          right
+          color="primary"
+          @click="toTop"
       >
         <v-icon>keyboard_arrow_up</v-icon>
       </v-btn>
     </v-fab-transition>
     <v-navigation-drawer
-      v-model="drawer"
-      v-if="$vuetify.breakpoint.smAndDown"
-      app
-      :style="{ top: '75px' }"
+        v-model="drawer"
+        v-if="$vuetify.breakpoint.smAndDown"
+        app
+        :style="{ top: '75px' }"
     >
       <v-list class="pt-0">
         <v-list-item-group>
           <v-list-item
-            class="text-center"
-            :to="'/'"
-            active-class="active-ng-list-item"
+              class="text-center"
+              :to="'/'"
+              active-class="active-ng-list-item"
           >
             <v-list-item-content>
               <v-list-item-title
-                v-text="'Index'"
-                class="text-uppercase dark--text"
+                  v-text="'Index'"
+                  class="text-uppercase dark--text"
               ></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <v-list-item
-            class="text-center"
-            :to="'about'"
-            active-class="active-ng-list-item"
+              class="text-center"
+              :to="'about'"
+              active-class="active-ng-list-item"
           >
             <v-list-item-content>
               <v-list-item-title
-                v-text="'About'"
-                class="text-uppercase dark--text"
+                  v-text="'About'"
+                  class="text-uppercase dark--text"
               >
               </v-list-item-title>
             </v-list-item-content>
@@ -52,9 +52,9 @@
             <v-list-item-content>
               <v-list-item-title>
                 <a
-                  class="text-styling font-weight-bold dark-link-text"
-                  target="_blank"
-                  href="mailto:info@d1gital.com"
+                    class="text-styling font-weight-bold dark-link-text"
+                    target="_blank"
+                    href="mailto:info@d1gital.com"
                 >
                   info@d1gital.com
                 </a>
@@ -65,26 +65,26 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
-      color="rgba(255,255,255, 0.95)"
-      height="75"
-      class="elevation-1"
-      fixed
-      hide-on-scroll
-      :style="{ 'z-index': 6 }"
+        color="rgba(255,255,255, 0.95)"
+        height="75"
+        class="elevation-1"
+        fixed
+        hide-on-scroll
+        :style="{ 'z-index': 6 }"
     >
       <template v-if="$vuetify.breakpoint.smAndDown">
         <div
-          class="nav-ham d-inline-block grey-background"
-          @click.stop="drawer = !drawer"
-          v-bind:class="{ open: drawer }"
+            class="nav-ham d-inline-block grey-background"
+            @click.stop="drawer = !drawer"
+            v-bind:class="{ open: drawer }"
         >
           <span></span>
           <span></span>
           <span></span>
         </div>
         <span
-          class="d-inline-block font-weight-bold ml-4 dark--text text-uppercase"
-          >{{ $router.currentRoute.name }}</span
+            class="d-inline-block font-weight-bold ml-4 dark--text text-uppercase"
+        >{{ $router.currentRoute.name }}</span
         >
         <v-spacer></v-spacer>
         <v-avatar size="70">
@@ -93,30 +93,30 @@
       </template>
       <template v-else>
         <v-img
-          :src="require('@/assets/Placeholder.png')"
-          max-width="90px"
-          max-height="90px"
-          alt="d1gital Logo"
+            :src="require('@/assets/Placeholder.png')"
+            max-width="90px"
+            max-height="90px"
+            alt="d1gital Logo"
         ></v-img>
         <v-spacer></v-spacer>
         <template v-if="!$vuetify.breakpoint.smAndDown">
           <v-btn
-            to="/"
-            class="hover-animation font-size-16px text-uppercase dark--text ml-4 mr-12"
-            :class="{
+              to="/"
+              class="hover-animation font-size-16px text-uppercase dark--text ml-4 mr-12"
+              :class="{
               'hover-animation-active': $router.currentRoute.name === 'index'
             }"
-            text
+              text
           >
             Index
           </v-btn>
           <v-btn
-            to="about"
-            class="hover-animation font-size-16px text-uppercase dark--text ml-4 mr-12"
-            :class="{
+              to="about"
+              class="hover-animation font-size-16px text-uppercase dark--text ml-4 mr-12"
+              :class="{
               'hover-animation-active': $router.currentRoute.name === 'about'
             }"
-            text
+              text
           >
             About
           </v-btn>
@@ -131,10 +131,10 @@
       </v-container>
     </v-main>
     <v-footer
-      :color="
+        :color="
         $vuetify.breakpoint.mdAndDown ? 'rgba(83, 100, 190, 0.05)' : '#fafafa'
       "
-      class="footer px-0 pb-5"
+        class="footer px-0 pb-5"
     >
       <v-layout justify-center align-end wrap class="z-index-1">
         <v-flex xs12 sm2 mx-12 my-4 class="align-center text-center">
@@ -142,16 +142,13 @@
             About
           </p>
           <a
-            class="text-styling grey-link-color font-weight-bold mb-0"
-            target="_blank"
-            href="mailto:info@d1gital.com"
+              class="text-styling grey-link-color font-weight-bold mb-0"
+              target="_blank"
+              href="mailto:info@d1gital.com"
           >
             info@d1gital.com
           </a>
-          <br />
-          <p class="text-styling grey-link-color mb-0">
-            Kaptol Zagreb, 10 000 Zagreb
-          </p>
+          <br/>
           <p class="text-styling grey-link-color mb-0">
             © {{ new Date().getFullYear() }} d1gital d.o.o.
           </p>
@@ -171,13 +168,13 @@ export default {
       color: "",
       message: "",
       items: [
-        { icon: "dashboard", title: "Dashboard", route: "dashboard" },
-        { icon: "book", title: "Orders", route: "orders" },
-        { icon: "local_shipping", title: "Shippers", route: "shippers" },
-        { icon: "people", title: "Clients", route: "clients" },
-        { icon: "business_center", title: "Owner", route: "owner" },
-        { icon: "money", title: "Finance", route: "finance" },
-        { icon: "trending_up", title: "Analytics", route: "analytics" }
+        {icon: "dashboard", title: "Dashboard", route: "dashboard"},
+        {icon: "book", title: "Orders", route: "orders"},
+        {icon: "local_shipping", title: "Shippers", route: "shippers"},
+        {icon: "people", title: "Clients", route: "clients"},
+        {icon: "business_center", title: "Owner", route: "owner"},
+        {icon: "money", title: "Finance", route: "finance"},
+        {icon: "trending_up", title: "Analytics", route: "analytics"}
       ]
     };
   },
@@ -251,6 +248,7 @@ export default {
 
 .white-background {
   margin-top: 12px;
+
   span {
     background: white;
   }
@@ -258,6 +256,7 @@ export default {
 
 .grey-background {
   margin-top: 2px;
+
   span {
     background: #7b7b7b;
   }
@@ -298,6 +297,7 @@ export default {
   &:before {
     opacity: 0 !important;
   }
+
   &:after {
     content: "";
     position: absolute;
@@ -315,6 +315,7 @@ export default {
     &:before {
       opacity: 0 !important;
     }
+
     &:after {
       transform: scaleX(1);
     }

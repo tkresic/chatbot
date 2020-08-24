@@ -2,100 +2,95 @@
   <v-row class="bg">
     <v-col class="py-0">
       <v-row
-        align="center"
-        justify="center"
-        class="min-height-750px margin-top-100px"
+          align="center"
+          justify="center"
+          class="min-height-750px margin-top-100px"
       >
         <v-col
-          cols="12"
-          md="4"
-          class="z-index-1 text-center"
-          :class="{ 'header-img-position': $vuetify.breakpoint.smAndDown }"
+            cols="12"
+            md="4"
+            class="z-index-1 text-center"
+            :class="{ 'header-img-position': $vuetify.breakpoint.smAndDown }"
         >
           <img
-            :src="require('@/assets/Placeholder.png')"
-            height="300px"
-            class="border-radius-15px"
+              :src="require('@/assets/Placeholder.png')"
+              height="300px"
+              class="border-radius-15px"
           />
         </v-col>
         <v-col cols="12" md="6" class="z-index-1 text-center text-md-left px-6">
           <div
-            class="title-position mb-4"
-            :class="{
+              :class="{
               'font-size-60px': $vuetify.breakpoint.lgAndDown,
-              'font-size-96px': $vuetify.breakpoint.xl,
-              'title-xs-position': $vuetify.breakpoint.xs,
-              'title-sm-position': $vuetify.breakpoint.sm,
-              'title-lg-and-md-position':
-                $vuetify.breakpoint.md || $vuetify.breakpoint.lg
-            }"
+              'font-size-96px': $vuetify.breakpoint.xl
+          }"
           >
-            <span class="font-weight-bold">d1gital</span>
+            <span class="d-inline-block mt-10 font-weight-bold">d1gital</span>
           </div>
-          <br />
+          <br/>
           <span class="grey--text">
               Maecenas ut risus venenatis, dapibus lectus ut, porttitor turpis. Nulla ornare metus sed lacus facilisis fermentum. Aliquam hendrerit ut nunc non fringilla. Etiam arcu odio, sagittis sed metus non, mattis molestie diam. Duis id elit scelerisque, sollicitudin leo sit amet, dapibus mi. In nibh ex, accumsan quis gravida in, faucibus vel dolor. Aliquam at semper turpis. Cras fringilla ipsum eget massa interdum, vitae malesuada mauris lacinia. Quisque egestas eros leo. Nam euismod tristique erat, sed sodales ante. Integer est ex, congue ut elit at, blandit imperdiet nisl.
           </span>
-          <br />
+          <br/>
         </v-col>
       </v-row>
       <v-row
-        justify="center"
-        class="min-height-750px"
-        :class="{ 'margin-top-100px': $vuetify.breakpoint.xsOnly }"
+          justify="center"
+          class="min-height-750px"
+          :class="{ 'margin-top-100px': $vuetify.breakpoint.xsOnly }"
       >
         <v-col cols="12" class="text-center" align-self="center">
           <h2 class="titles text-uppercase font-weight-bold mb-3">Services</h2>
           <div class="divider"></div>
         </v-col>
         <v-col
-          v-for="({ title, text, img }, i) in services"
-          :key="i"
-          cols="12"
-          md="3"
-          align-self="start"
-          class="animation-class mx-8 px-8"
-          v-animate.fade="'slide-up'"
+            v-for="({ title, text, img }, i) in services"
+            :key="i"
+            cols="12"
+            md="3"
+            align-self="start"
+            class="animation-class mx-8 px-8"
+            v-animate.fade="'slide-up'"
         >
           <v-card
-            class="justify-center elevation-3 text-center py-12 px-4"
-            height="350px"
+              class="justify-center elevation-3 text-center py-12 px-4"
+              height="350px"
           >
             <v-card-title
-              class="justify-center font-weight-black text-uppercase"
+                class="justify-center font-weight-black text-uppercase"
             >
-              <img :src="require('@/assets/' + img)" width="50%" />
+              <img :src="require('@/assets/' + img)" width="50%"/>
             </v-card-title>
             <span class="text-uppercase font-weight-bold black--text">{{
-              title
-            }}</span>
-            <v-card-text class="grey--text" v-text="text"> </v-card-text>
+                title
+              }}</span>
+            <v-card-text class="grey--text" v-text="text"></v-card-text>
           </v-card>
         </v-col>
       </v-row>
       <v-row justify="center" align="center" class="row-margin">
         <v-col
-          cols="12"
-          md="4"
-          class="animation-class"
-          v-animate.fade="'slide-up'"
+            cols="12"
+            md="4"
+            class="animation-class"
+            v-animate.fade="'slide-up'"
         >
           <v-row class="justify-center justify-md-start">
             <v-col cols="auto" class="text-center">
               <img
-                :src="require('@/assets/Placeholder.png')"
-                width="400px"
+                  :src="require('@/assets/Placeholder.png')"
+                  width="400px"
               />
             </v-col>
           </v-row>
         </v-col>
         <v-col
-          cols="12"
-          md="4"
-          class="text-center text-md-left animation-class"
-          :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-          :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
-          v-animate.fade="'slide-up'"
+            cols="12"
+            md="4"
+            class="text-center text-md-left animation-class"
+            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
+            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+            v-animate.fade="'slide-up'"
         >
           <h1>Service 1</h1>
           <p class="grey--text">
@@ -118,11 +113,11 @@
       </v-row>
       <v-row justify="center" align="center" class="row-margin">
         <v-col
-          cols="12"
-          md="4"
-          class="text-center text-md-left animation-class"
-          :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-          v-animate.fade="'slide-up'"
+            cols="12"
+            md="4"
+            class="text-center text-md-left animation-class"
+            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
+            v-animate.fade="'slide-up'"
         >
           <h1>Service 2</h1>
           <p class="grey--text">
@@ -143,16 +138,16 @@
           </p>
         </v-col>
         <v-col
-          cols="12"
-          md="4"
-          class="animation-class"
-          v-animate.fade="'slide-up'"
+            cols="12"
+            md="4"
+            class="animation-class"
+            v-animate.fade="'slide-up'"
         >
           <v-row class="justify-center justify-md-end">
             <v-col cols="auto" class="text-center">
               <img
-                :src="require('@/assets/Placeholder.png')"
-                width="400px"
+                  :src="require('@/assets/Placeholder.png')"
+                  width="400px"
               />
             </v-col>
           </v-row>
@@ -160,27 +155,27 @@
       </v-row>
       <v-row justify="center" align="center" class="row-margin">
         <v-col
-          cols="12"
-          md="4"
-          class="animation-class"
-          v-animate.fade="'slide-up'"
+            cols="12"
+            md="4"
+            class="animation-class"
+            v-animate.fade="'slide-up'"
         >
           <v-row class="justify-center justify-md-start">
             <v-col cols="auto" class="text-center">
               <img
-                :src="require('@/assets/Placeholder.png')"
-                width="400px"
+                  :src="require('@/assets/Placeholder.png')"
+                  width="400px"
               />
             </v-col>
           </v-row>
         </v-col>
         <v-col
-          cols="12"
-          md="4"
-          class="text-center text-md-left animation-class"
-          :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-          v-animate.fade="'slide-up'"
-          :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+            cols="12"
+            md="4"
+            class="text-center text-md-left animation-class"
+            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
+            v-animate.fade="'slide-up'"
+            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
         >
           <h1>Service 3</h1>
           <p class="grey--text">
@@ -286,24 +281,6 @@ p {
 
 .row-margin {
   margin: 125px 0;
-}
-
-.title-position {
-  display: inline-block;
-  position: relative;
-  top: 30px;
-}
-
-.title-lg-and-md-position {
-  top: 15px !important;
-}
-
-.title-sm-position {
-  top: 55px !important;
-}
-
-.title-xs-position {
-  top: 75px !important;
 }
 
 .animation-class {
