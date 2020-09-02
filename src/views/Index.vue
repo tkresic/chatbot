@@ -30,10 +30,25 @@
                             d1gital
                         </span>
                     </div>
+                    <v-carousel
+                        cycle
+                        hide-delimiter-background
+                        hide-delimiters
+                        :show-arrows="false"
+                        interval="3000"
+                        height="100"
+                    >
+                        <v-carousel-item
+                            v-for="(slide, i) in slides"
+                            :key="i"
+                        >
+                             <span class="grey--text">
+                                 {{ slide }}
+                             </span>
+                        </v-carousel-item>
+                    </v-carousel>
                     <br/>
-                    <span class="grey--text">
-                        Maecenas ut risus venenatis, dapibus lectus ut, porttitor turpis. Nulla ornare metus sed lacus facilisis fermentum. Aliquam hendrerit ut nunc non fringilla. Etiam arcu odio, sagittis sed metus non, mattis molestie diam. Duis id elit scelerisque, sollicitudin leo sit amet, dapibus mi. In nibh ex, accumsan quis gravida in, faucibus vel dolor. Aliquam at semper turpis. Cras fringilla ipsum eget massa interdum, vitae malesuada mauris lacinia. Quisque egestas eros leo. Nam euismod tristique erat, sed sodales ante. Integer est ex, congue ut elit at, blandit imperdiet nisl.
-                    </span>
+
                     <br/>
                 </v-col>
             </v-row>
@@ -73,7 +88,7 @@
                         v-intersect="handleIntersect"
                         class="about"
                     >
-                        Service 1
+                        About
                     </h1>
                     <p class="grey--text">
                         Phasellus ornare, leo in vehicula ultrices, ipsum eros
@@ -107,66 +122,232 @@
                 id="services"
                 justify="center"
                 align="center"
-                class="height-100vh"
+                class="navy-blue-bg height-100vh white--text"
             >
                 <v-col
-                    v-animate.fade="'slide-up'"
                     cols="12"
-                    md="4"
-                    class="animation-class"
+                    sm="6"
                 >
-                    <v-row class="justify-center justify-md-start">
+                    <v-row
+                        justify="center"
+                        align="center"
+                    >
                         <v-col
+                            v-animate.fade="'slide-up'"
                             cols="auto"
-                            class="text-center"
+                            class="animation-class mx-6"
                         >
-                            <img
-                                :src="require('@/assets/Placeholder.png')"
-                                width="400px"
-                            />
+                            <v-icon
+                                x-large
+                                dark
+                            >
+                                edit
+                            </v-icon>
+                        </v-col>
+                        <v-col
+                            cols="12"
+                            sm="6"
+                            class="text-left animation-class mx-6"
+                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
+                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+                            v-animate.fade="'slide-up'"
+                        >
+                            <h1
+                                v-intersect="handleIntersect"
+                                class="services"
+                            >
+                                Title
+                            </h1>
+                            <p>
+                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
+                                vulputate
+                                neque, a eleifend est nunc non velit. Nulla facilisi.
+                                Suspendisse
+                                potenti. Nunc vel libero purus. In hac habitasse platea
+                                dictumst.
+                            </p>
+                        </v-col>
+                    </v-row>
+                    <v-row
+                        justify="center"
+                        align="center"
+                    >
+                        <v-col
+                            v-animate.fade="'slide-up'"
+                            cols="auto"
+                            class="animation-class mx-6"
+                        >
+                            <v-icon
+                                x-large
+                                dark
+                            >
+                                edit
+                            </v-icon>
+                        </v-col>
+                        <v-col
+                            cols="12"
+                            sm="6"
+                            class="text-left animation-class mx-6"
+                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
+                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+                            v-animate.fade="'slide-up'"
+                        >
+                            <h1>Title</h1>
+                            <p>
+                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
+                                vulputate
+                                neque, a eleifend est nunc non velit. Nulla facilisi.
+                                Suspendisse
+                                potenti. Nunc vel libero purus. In hac habitasse platea
+                                dictumst.
+                            </p>
+                        </v-col>
+                    </v-row>
+                    <v-row
+                        justify="center"
+                        align="center"
+                    >
+                        <v-col
+                            v-animate.fade="'slide-up'"
+                            cols="auto"
+                            class="animation-class mx-6"
+                        >
+                            <v-icon
+                                x-large
+                                dark
+                            >
+                                edit
+                            </v-icon>
+                        </v-col>
+                        <v-col
+                            cols="12"
+                            sm="6"
+                            class="text-left animation-class mx-6"
+                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
+                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+                            v-animate.fade="'slide-up'"
+                        >
+                            <h1>Title</h1>
+                            <p>
+                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
+                                vulputate
+                                neque, a eleifend est nunc non velit. Nulla facilisi.
+                                Suspendisse
+                                potenti. Nunc vel libero purus. In hac habitasse platea
+                                dictumst.
+                            </p>
                         </v-col>
                     </v-row>
                 </v-col>
                 <v-col
                     cols="12"
-                    md="4"
-                    class="text-center text-md-left animation-class"
-                    :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                    :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
-                    v-animate.fade="'slide-up'"
+                    sm="6"
                 >
-                    <h1
-                        v-intersect="handleIntersect"
-                        class="services"
+                    <v-row
+                        justify="center"
+                        align="center"
                     >
-                        Service 2
-                    </h1>
-                    <p class="grey--text">
-                        Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                        vulputate
-                        neque, a eleifend est nunc non velit. Nulla facilisi.
-                        Suspendisse
-                        potenti. Nunc vel libero purus. In hac habitasse platea
-                        dictumst.
-                        Pellentesque cursus nisi nisi, sit amet faucibus quam
-                        malesuada ut.
-                        Vestibulum purus tellus, molestie id mi eget, sagittis
-                        convallis
-                        quam.
-                    </p>
-                    <p class="grey--text">
-                        Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                        vulputate
-                        neque, a eleifend est nunc non velit. Nulla facilisi.
-                        Suspendisse
-                        potenti. Nunc vel libero purus. In hac habitasse platea
-                        dictumst.
-                        Pellentesque cursus nisi nisi, sit amet faucibus quam
-                        malesuada ut.
-                        Vestibulum purus tellus, molestie id mi eget, sagittis
-                        convallis
-                        quam.
-                    </p>
+                        <v-col
+                            v-animate.fade="'slide-up'"
+                            cols="auto"
+                            class="animation-class mx-6"
+                        >
+                            <v-icon
+                                x-large
+                                dark
+                            >
+                                edit
+                            </v-icon>
+                        </v-col>
+                        <v-col
+                            cols="12"
+                            sm="6"
+                            class="text-left animation-class mx-6"
+                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
+                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+                            v-animate.fade="'slide-up'"
+                        >
+                            <h1>Title</h1>
+                            <p>
+                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
+                                vulputate
+                                neque, a eleifend est nunc non velit. Nulla facilisi.
+                                Suspendisse
+                                potenti. Nunc vel libero purus. In hac habitasse platea
+                                dictumst.
+                            </p>
+                        </v-col>
+                    </v-row>
+                    <v-row
+                        justify="center"
+                        align="center"
+                    >
+                        <v-col
+                            v-animate.fade="'slide-up'"
+                            cols="auto"
+                            class="animation-class mx-6"
+                        >
+                            <v-icon
+                                x-large
+                                dark
+                            >
+                                edit
+                            </v-icon>
+                        </v-col>
+                        <v-col
+                            cols="12"
+                            sm="6"
+                            class="text-left animation-class mx-6"
+                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
+                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+                            v-animate.fade="'slide-up'"
+                        >
+                            <h1>Title</h1>
+                            <p>
+                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
+                                vulputate
+                                neque, a eleifend est nunc non velit. Nulla facilisi.
+                                Suspendisse
+                                potenti. Nunc vel libero purus. In hac habitasse platea
+                                dictumst.
+                            </p>
+                        </v-col>
+                    </v-row>
+                    <v-row
+                        justify="center"
+                        align="center"
+                    >
+                        <v-col
+                            v-animate.fade="'slide-up'"
+                            cols="auto"
+                            class="animation-class mx-6"
+                        >
+                            <v-icon
+                                x-large
+                                dark
+                            >
+                                edit
+                            </v-icon>
+                        </v-col>
+                        <v-col
+                            cols="12"
+                            sm="6"
+                            class="text-left animation-class mx-6"
+                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
+                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+                            v-animate.fade="'slide-up'"
+                        >
+                            <h1>Title</h1>
+                            <p>
+                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
+                                vulputate
+                                neque, a eleifend est nunc non velit. Nulla facilisi.
+                                Suspendisse
+                                potenti. Nunc vel libero purus. In hac habitasse platea
+                                dictumst.
+                            </p>
+                        </v-col>
+                    </v-row>
                 </v-col>
             </v-row>
         </v-col>
@@ -181,24 +362,14 @@ export default {
 
     data() {
         return {
-            services: [
-                {
-                    title: 'Service 1',
-                    text: 'Praesent eget eros sed tortor interdum molestie. Integer in est sed felis posuere sollicitudin.',
-                    img: 'Placeholder.png'
-                },
-                {
-                    title: 'Service 2',
-                    text: 'Praesent eget eros sed tortor interdum molestie. Integer in est sed felis posuere sollicitudin.',
-                    img: 'Placeholder.png'
-                },
-                {
-                    title: 'Service 3',
-                    text: 'Praesent eget eros sed tortor interdum molestie. Integer in est sed felis posuere sollicitudin.',
-                    img: 'Placeholder.png'
-                }
-            ]
-        };
+            slides: [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat nisi eu arcu suscipit malesuada. Donec euismod euismod lacus, sit amet feugiat ipsum aliquam ac. Etiam eget purus nec felis auctor convallis et nec leo. Aliquam ullamcorper mauris et convallis mattis. Sed sollicitudin aliquam scelerisque. Aenean suscipit velit et erat faucibus placerat. Vestibulum leo orci, consectetur ac egestas non, aliquet sit amet quam. Curabitur congue molestie quam ut aliquam. Ut a facilisis libero. Proin cursus, ipsum id posuere volutpat, eros purus congue magna, eget imperdiet lorem diam et sapien. Nulla at sagittis nisi. Ut et dui sed diam fringilla tristique.',
+                'Proin vitae facilisis dolor. Ut ornare fermentum risus, sed faucibus elit suscipit in. Morbi auctor ipsum posuere, suscipit est sed, tempor erat. Vivamus tempus mauris orci, at tincidunt felis imperdiet sit amet. Cras quis quam volutpat, vulputate nisl eget, ullamcorper augue. Vivamus quis ante vitae enim sagittis interdum vitae quis eros. In et lacus orci. Nulla mattis, sapien sed congue efficitur, neque nunc volutpat mi, vel vulputate massa tortor id tortor. Mauris eleifend, lectus eget faucibus porta, leo arcu convallis odio, vel cursus mauris augue ut ante. Suspendisse eros ipsum, efficitur in libero in, egestas condimentum ante. Nullam non sodales lectus. Cras eget sapien quis mauris consequat placerat. Nunc suscipit ultricies sodales.',
+                'Maecenas eu facilisis diam. Nunc dolor mauris, tempus id augue eget, dignissim pulvinar nulla. Aliquam erat volutpat. Fusce rutrum venenatis nisi sit amet tempus. Vestibulum ac ipsum nec lacus feugiat accumsan sit amet pharetra ipsum. Quisque nec ante porttitor, finibus dui porttitor, pretium elit. Suspendisse potenti. Sed vestibulum ullamcorper lectus vitae mollis. Vestibulum sit amet placerat nisi. Ut quis efficitur nisl, sed tempor odio. Donec in viverra nisi. Donec metus sem, elementum ut odio rutrum, tempor varius dolor. Integer id ipsum mauris.',
+                'Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent gravida neque a nunc sagittis, in finibus ipsum varius. Nunc accumsan ornare metus ac ultrices. Vestibulum suscipit varius nisi sed feugiat. Ut hendrerit arcu ac velit luctus ultricies. Cras sit amet pellentesque quam. Nullam placerat, augue sed ullamcorper blandit, massa est venenatis elit, suscipit dignissim dui nulla at quam. Vestibulum id convallis ligula, non tempor leo.',
+                'Maecenas dignissim magna ac nulla hendrerit, ac lacinia urna facilisis. Nulla accumsan mi ut enim posuere ultrices in ut augue. Nulla at euismod magna. Curabitur egestas erat massa, vel ornare purus dictum et. Phasellus et justo eget orci rhoncus mollis. Phasellus sagittis risus commodo metus mollis imperdiet. Aliquam posuere nisi orci, cursus finibus turpis volutpat sit amet. Ut nec cursus turpis. Donec vehicula ligula vitae ex cursus commodo.',
+            ],
+        }
     },
 
     methods: {
@@ -208,19 +379,11 @@ export default {
             }
         }
     }
+
 };
 </script>
 
 <style lang="scss">
-
-p {
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.bg {
-    background: #fafafa;
-    color: rgba(0, 0, 0, 0.87);
-}
 
 .text-styling {
     font-size: 14px;
@@ -311,6 +474,10 @@ p {
 .header-img-position {
     position: relative;
     top: 70px;
+}
+
+.navy-blue-bg {
+    background: #000080;
 }
 
 </style>

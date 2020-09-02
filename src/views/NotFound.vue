@@ -24,7 +24,7 @@
                 @click="$router.push('/')"
                 depressed
                 large
-                color="grey darken-4"
+                color="primary"
                 class="mx-6"
             >
                 <span class="white--text">Home Page</span>

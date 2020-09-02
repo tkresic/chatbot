@@ -1,109 +1,12 @@
 <template>
     <v-app>
-        <v-fab-transition>
-            <v-btn
-                @click="$vuetify.goTo(0)"
-                v-scroll="onScroll"
-                v-show="fab"
-                fab
-                dark
-                fixed
-                bottom
-                right
-                color="primary"
-            >
-                <v-icon>keyboard_arrow_up</v-icon>
-            </v-btn>
-        </v-fab-transition>
-        <v-navigation-drawer
-            v-model="drawer"
-            v-if="$vuetify.breakpoint.smAndDown"
-            app
-            :style="{ top: '75px' }"
-        >
-            <v-list class="pt-0">
-                <v-list-item-group>
-                    <v-list-item
-                        @click="$vuetify.goTo('#about')"
-                        class="text-center"
-                        active-class="active-ng-list-item"
-                    >
-                        <v-list-item-content>
-                            <v-list-item-title
-                                v-text="'Index'"
-                                class="text-uppercase dark--text"
-                            ></v-list-item-title>
-                        </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item
-                        @click="$vuetify.goTo('#services')"
-                        class="text-center"
-                        active-class="active-ng-list-item"
-                    >
-                        <v-list-item-content>
-                            <v-list-item-title
-                                v-text="'About'"
-                                class="text-uppercase dark--text"
-                            >
-                            </v-list-item-title>
-                        </v-list-item-content>
-                    </v-list-item>
-                </v-list-item-group>
-            </v-list>
-        </v-navigation-drawer>
-        <v-app-bar
-            color="rgba(255,255,255, 0.95)"
-            height="75"
-            class="elevation-1"
-            fixed
-            :style="{ 'z-index': 6 }"
-        >
-            <template v-if="$vuetify.breakpoint.smAndDown">
-                <div
-                    class="nav-ham d-inline-block grey-background"
-                    @click.stop="drawer = !drawer"
-                    v-bind:class="{ open: drawer }"
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <span class="d-inline-block font-weight-bold ml-4 dark--text text-uppercase">{{ $router.currentRoute.name }}</span>
-                <v-spacer></v-spacer>
-                <v-avatar size="70">
-                    <v-img :src="require('@/assets/Placeholder.png')"></v-img>
-                </v-avatar>
-            </template>
-            <template v-else>
-                <v-img
-                    @click="$vuetify.goTo(0)"
-                    :src="require('@/assets/Placeholder.png')"
-                    max-width="90px"
-                    max-height="90px"
-                    alt="d1gital Logo"
-                    class="cursor-pointer"
-                ></v-img>
-                <v-spacer></v-spacer>
-                <template v-if="!$vuetify.breakpoint.smAndDown">
-                    <v-btn
-                        @click="$vuetify.goTo('#about')"
-                        class="hover-animation font-size-16px text-uppercase dark--text ml-4 mr-12"
-                        :class="{ 'hover-animation-active': intersecting === 'about' }"
-                        text
-                    >
-                        About
-                    </v-btn>
-                    <v-btn
-                        @click="$vuetify.goTo('#services')"
-                        class="hover-animation font-size-16px text-uppercase dark--text ml-4 mr-12"
-                        :class="{ 'hover-animation-active': intersecting === 'services' }"
-                        text
-                    >
-                        Services
-                    </v-btn>
-                </template>
-            </template>
-        </v-app-bar>
+        <ScrollToTop/>
+        <NavigationDrawer :drawer.sync="drawer"/>
+        <AppBar
+            :drawer.sync="drawer"
+            :currentRouteName="$router.currentRoute.name"
+            :intersecting.sync="intersecting"
+        />
         <v-main class="background">
             <v-container
                 fluid
@@ -115,78 +18,41 @@
                 </v-layout>
             </v-container>
         </v-main>
-        <v-footer
-            :color="$vuetify.breakpoint.mdAndDown ? 'rgba(83, 100, 190, 0.05)' : '#fafafa'"
-            class="footer px-0 pb-5"
-        >
-            <v-layout
-                justify-center
-                align-end
-                wrap
-                class="z-index-1"
-            >
-                <v-flex
-                    xs12
-                    sm2
-                    mx-12
-                    my-4
-                    class="align-center text-center"
-                >
-                    <p class="grey-text font-weight-bold mb-0">
-                        About
-                    </p>
-                    <a
-                        class="text-styling grey-link-color font-weight-bold mb-0"
-                        target="_blank"
-                        href="mailto:info@d1gital.com"
-                    >
-                        info@d1gital.com
-                    </a>
-                    <br/>
-                    <p class="text-styling grey-link-color mb-0">
-                        © {{ new Date().getFullYear() }} d1gital d.o.o.
-                    </p>
-                </v-flex>
-            </v-layout>
-        </v-footer>
+        <Footer/>
     </v-app>
 </template>
 
 <script>
 
+import Footer from '@/components/Footer.vue';
+import AppBar from '@/components/AppBar.vue';
+import ScrollToTop from '@/components/ScrollToTop.vue';
+import NavigationDrawer from '@/components/NavigationDrawer.vue';
+
 export default {
+
+    components: {
+        Footer,
+        AppBar,
+        ScrollToTop,
+        NavigationDrawer,
+    },
+
     data() {
         return {
             drawer: false,
-            fab: false,
             intersecting: null,
         };
     },
-
-    methods: {
-        onScroll(e) {
-            if (typeof window === 'undefined') return;
-            const top = window.pageYOffset || e.target.scrollTop || 0;
-            this.fab = top > 20;
-        },
-    }
 };
 
 </script>
 
 <style lang="scss">
 
-.background {
-    background: #f9f9f9;
-}
-
 .v-select:not(.do-not-apply-transform) {
     transform: scale(0.75);
     margin-top: 16px;
-}
-
-.text-light {
-    color: #fff !important;
 }
 
 .v-list {
@@ -225,17 +91,8 @@ export default {
     transition: 0.2s ease-in-out;
 }
 
-.white-background {
-    margin-top: 12px;
-
-    span {
-        background: white;
-    }
-}
-
 .grey-background {
     margin-top: 2px;
-
     span {
         background: #7b7b7b;
     }
@@ -261,22 +118,10 @@ export default {
     width: 42%;
 }
 
-.footer {
-    padding-bottom: 50px;
-}
-
-.footer-img {
-    position: absolute !important;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
 .hover-animation {
     &:before {
         opacity: 0 !important;
     }
-
     &:after {
         content: "";
         position: absolute;
@@ -289,7 +134,6 @@ export default {
         background-color: #1976d2;
         transition: transform 0.3s;
     }
-
     &:hover {
         &:before {
             opacity: 0 !important;
