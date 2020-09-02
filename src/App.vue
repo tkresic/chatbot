@@ -2,6 +2,7 @@
     <v-app>
         <v-fab-transition>
             <v-btn
+                @click="$vuetify.goTo(0)"
                 v-scroll="onScroll"
                 v-show="fab"
                 fab
@@ -10,7 +11,6 @@
                 bottom
                 right
                 color="primary"
-                @click="toTop"
             >
                 <v-icon>keyboard_arrow_up</v-icon>
             </v-btn>
@@ -24,8 +24,8 @@
             <v-list class="pt-0">
                 <v-list-item-group>
                     <v-list-item
+                        @click="$vuetify.goTo('#about')"
                         class="text-center"
-                        :to="'/'"
                         active-class="active-ng-list-item"
                     >
                         <v-list-item-content>
@@ -36,8 +36,8 @@
                         </v-list-item-content>
                     </v-list-item>
                     <v-list-item
+                        @click="$vuetify.goTo('#services')"
                         class="text-center"
-                        :to="'/'"
                         active-class="active-ng-list-item"
                     >
                         <v-list-item-content>
@@ -56,7 +56,6 @@
             height="75"
             class="elevation-1"
             fixed
-            hide-on-scroll
             :style="{ 'z-index': 6 }"
         >
             <template v-if="$vuetify.breakpoint.smAndDown">
@@ -76,26 +75,28 @@
                 </v-avatar>
             </template>
             <template v-else>
-                <a href="https://d1gital.hr">
-                    <v-img
-                        :src="require('@/assets/Placeholder.png')"
-                        max-width="90px"
-                        max-height="90px"
-                        alt="d1gital Logo"
-                    ></v-img>
-                </a>
+                <v-img
+                    @click="$vuetify.goTo(0)"
+                    :src="require('@/assets/Placeholder.png')"
+                    max-width="90px"
+                    max-height="90px"
+                    alt="d1gital Logo"
+                    class="cursor-pointer"
+                ></v-img>
                 <v-spacer></v-spacer>
                 <template v-if="!$vuetify.breakpoint.smAndDown">
                     <v-btn
+                        @click="$vuetify.goTo('#about')"
                         class="hover-animation font-size-16px text-uppercase dark--text ml-4 mr-12"
-                        :class="{ 'hover-animation-active': $router.currentRoute.name === 'index' }"
+                        :class="{ 'hover-animation-active': intersecting === 'about' }"
                         text
                     >
                         About
                     </v-btn>
                     <v-btn
+                        @click="$vuetify.goTo('#services')"
                         class="hover-animation font-size-16px text-uppercase dark--text ml-4 mr-12"
-                        :class="{ 'hover-animation-active': $router.currentRoute.name === 'about' }"
+                        :class="{ 'hover-animation-active': intersecting === 'services' }"
                         text
                     >
                         Services
@@ -110,7 +111,7 @@
                 class="py-0"
             >
                 <v-layout justify-center>
-                    <router-view></router-view>
+                    <router-view :intersecting.sync="intersecting"></router-view>
                 </v-layout>
             </v-container>
         </v-main>
@@ -156,7 +157,9 @@
 export default {
     data() {
         return {
+            drawer: false,
             fab: false,
+            intersecting: null,
         };
     },
 
@@ -166,20 +169,12 @@ export default {
             const top = window.pageYOffset || e.target.scrollTop || 0;
             this.fab = top > 20;
         },
-        toTop() {
-            this.$vuetify.goTo(0);
-        }
     }
 };
 
 </script>
 
 <style lang="scss">
-
-*:not(.v-messages__wrapper .v-text-field__details) {
-    font-family: "Nunito Sans", sans-serif;
-    color: rgba(0, 0, 0, 0.6);
-}
 
 .background {
     background: #f9f9f9;
@@ -310,12 +305,8 @@ export default {
     transform: scaleX(1);
 }
 
-.active-ng-list-item {
-    color: red;
-}
-
-.dark-link-text {
-    color: rgba(0, 0, 0, 0.62) !important;
+.cursor-pointer {
+    cursor: pointer;
 }
 
 </style>

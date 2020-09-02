@@ -4,13 +4,12 @@
             <v-row
                 align="center"
                 justify="center"
-                class="min-height-750px margin-top-100px"
+                class="height-100vh"
             >
                 <v-col
                     cols="12"
                     md="4"
-                    class="z-index-1 text-center"
-                    :class="{ 'header-img-position': $vuetify.breakpoint.smAndDown }"
+                    class="text-center"
                 >
                     <img
                         :src="require('@/assets/Placeholder.png')"
@@ -24,7 +23,12 @@
                     class="z-index-1 text-center text-md-left px-6"
                 >
                     <div :class="{ 'font-size-60px': $vuetify.breakpoint.lgAndDown, 'font-size-96px': $vuetify.breakpoint.xl }">
-                        <span class="d-inline-block mt-10 font-weight-bold">d1gital</span>
+                        <span
+                            v-intersect="handleIntersect"
+                            class="d-inline-block mt-10 font-weight-bold"
+                        >
+                            d1gital
+                        </span>
                     </div>
                     <br/>
                     <span class="grey--text">
@@ -34,51 +38,10 @@
                 </v-col>
             </v-row>
             <v-row
+                id="about"
                 justify="center"
-                class="min-height-750px"
-                :class="{ 'margin-top-100px': $vuetify.breakpoint.xsOnly }"
-            >
-                <v-col 
-                    cols="12" 
-                    class="text-center" 
-                    align-self="center"
-                >
-                    <h2 class="titles text-uppercase font-weight-bold mb-3">Services</h2>
-                    <div class="divider"></div>
-                </v-col>
-                <v-col
-                    v-for="({ title, text, img }, i) in services"
-                    :key="i"
-                    cols="12"
-                    md="3"
-                    align-self="start"
-                    class="animation-class mx-8 px-8"
-                    v-animate.fade="'slide-up'"
-                >
-                    <v-card
-                        class="justify-center elevation-3 text-center py-12 px-4"
-                        height="350px"
-                    >
-                        <v-card-title class="justify-center font-weight-black text-uppercase">
-                            <img 
-                                :src="require('@/assets/' + img)" 
-                                width="50%"
-                            />
-                        </v-card-title>
-                        <span class="text-uppercase font-weight-bold black--text">
-                            {{ title }}
-                        </span>
-                        <v-card-text
-                            v-text="text"
-                            class="grey--text"
-                        ></v-card-text>
-                    </v-card>
-                </v-col>
-            </v-row>
-            <v-row 
-                justify="center"
-                align="center" 
-                class="row-margin"
+                align="center"
+                class="height-100vh"
             >
                 <v-col
                     v-animate.fade="'slide-up'"
@@ -106,7 +69,12 @@
                     :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
                     v-animate.fade="'slide-up'"
                 >
-                    <h1>Service 1</h1>
+                    <h1
+                        v-intersect="handleIntersect"
+                        class="about"
+                    >
+                        Service 1
+                    </h1>
                     <p class="grey--text">
                         Phasellus ornare, leo in vehicula ultrices, ipsum eros
                         vulputate
@@ -133,81 +101,23 @@
                         convallis
                         quam.
                     </p>
-                </v-col>
-            </v-row>
-            <v-row 
-                justify="center" 
-                align="center" 
-                class="row-margin"
-            >
-                <v-col
-                    cols="12"
-                    md="4"
-                    class="text-center text-md-left animation-class"
-                    :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                    v-animate.fade="'slide-up'"
-                >
-                    <h1>Service 2</h1>
-                    <p class="grey--text">
-                        Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                        vulputate
-                        neque, a eleifend est nunc non velit. Nulla facilisi.
-                        Suspendisse
-                        potenti. Nunc vel libero purus. In hac habitasse platea
-                        dictumst.
-                        Pellentesque cursus nisi nisi, sit amet faucibus quam
-                        malesuada ut.
-                        Vestibulum purus tellus, molestie id mi eget, sagittis
-                        convallis
-                        quam.
-                    </p>
-                    <p class="grey--text">
-                        Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                        vulputate
-                        neque, a eleifend est nunc non velit. Nulla facilisi.
-                        Suspendisse
-                        potenti. Nunc vel libero purus. In hac habitasse platea
-                        dictumst.
-                        Pellentesque cursus nisi nisi, sit amet faucibus quam
-                        malesuada ut.
-                        Vestibulum purus tellus, molestie id mi eget, sagittis
-                        convallis
-                        quam.
-                    </p>
-                </v-col>
-                <v-col
-                    cols="12"
-                    md="4"
-                    class="animation-class"
-                    v-animate.fade="'slide-up'"
-                >
-                    <v-row class="justify-center justify-md-end">
-                        <v-col 
-                            cols="auto" 
-                            class="text-center"
-                        >
-                            <img
-                                :src="require('@/assets/Placeholder.png')"
-                                width="400px"
-                            />
-                        </v-col>
-                    </v-row>
                 </v-col>
             </v-row>
             <v-row
-                justify="center" 
-                align="center" 
-                class="row-margin"
+                id="services"
+                justify="center"
+                align="center"
+                class="height-100vh"
             >
                 <v-col
+                    v-animate.fade="'slide-up'"
                     cols="12"
                     md="4"
                     class="animation-class"
-                    v-animate.fade="'slide-up'"
                 >
                     <v-row class="justify-center justify-md-start">
-                        <v-col 
-                            cols="auto" 
+                        <v-col
+                            cols="auto"
                             class="text-center"
                         >
                             <img
@@ -222,10 +132,15 @@
                     md="4"
                     class="text-center text-md-left animation-class"
                     :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                    v-animate.fade="'slide-up'"
                     :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+                    v-animate.fade="'slide-up'"
                 >
-                    <h1>Service 3</h1>
+                    <h1
+                        v-intersect="handleIntersect"
+                        class="services"
+                    >
+                        Service 2
+                    </h1>
                     <p class="grey--text">
                         Phasellus ornare, leo in vehicula ultrices, ipsum eros
                         vulputate
@@ -261,6 +176,9 @@
 <script>
 
 export default {
+
+    props: ['intersecting'],
+
     data() {
         return {
             services: [
@@ -281,6 +199,14 @@ export default {
                 }
             ]
         };
+    },
+
+    methods: {
+        handleIntersect(entries) {
+            if (entries[0].isIntersecting) {
+                this.$emit('update:intersecting', entries[0].target.className);
+            }
+        }
     }
 };
 </script>
@@ -319,8 +245,8 @@ p {
     font-size: 34px !important;
 }
 
-.min-height-750px {
-    min-height: 750px;
+.height-100vh {
+    height: 100vh;
 }
 
 .font-size-60px {
@@ -380,16 +306,6 @@ p {
 
 .titles {
     font-size: 45px;
-}
-
-.margin-top-100px {
-    margin-top: 100px;
-}
-
-.agency-position {
-    position: relative;
-    display: inline-block;
-    top: -30px;
 }
 
 .header-img-position {
