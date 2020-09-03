@@ -8,7 +8,7 @@
     >
         <v-img
             @click="$vuetify.goTo(0)"
-            :src="require('@/assets/Placeholder.png')"
+            :src="require('@/assets/Digital.png')"
             max-width="90px"
             max-height="90px"
             alt="d1gital Logo"

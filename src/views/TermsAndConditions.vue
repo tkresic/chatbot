@@ -8,7 +8,7 @@
             >
                 <v-col cols="12" md="6"
                        class="z-index-1 text-center text-md-left px-6">
-                    <div class="preview">
+                    <div class="grey--text">
                         <h2><strong>Terms and Conditions</strong></h2>
                         <p>Welcome to d1gital.hr!</p>
                         <p>
