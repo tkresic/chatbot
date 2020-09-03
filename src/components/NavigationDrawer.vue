@@ -14,7 +14,7 @@
                 >
                     <v-list-item-content>
                         <v-list-item-title
-                            v-text="'Index'"
+                            v-text="'About'"
                             class="text-uppercase dark--text"
                         ></v-list-item-title>
                     </v-list-item-content>
@@ -26,7 +26,7 @@
                 >
                     <v-list-item-content>
                         <v-list-item-title
-                            v-text="'About'"
+                            v-text="'Services'"
                             class="text-uppercase dark--text"
                         >
                         </v-list-item-title>

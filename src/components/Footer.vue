@@ -42,26 +42,9 @@
                 <p class="grey-text font-weight-bold mb-0">
                     Legal
                 </p>
-                <a
-                    class="text-styling grey-link-color font-weight-bold mb-0"
-                    href="#"
-                >
-                    Uvjeti i odredbe
-                </a>
-                <br>
-                <a
-                    class="text-styling grey-link-color font-weight-bold mb-0"
-                    href="#"
-                >
-                    Politika privatnosti
-                </a>
-                <br>
-                <a
-                    class="text-styling grey-link-color font-weight-bold mb-0"
-                    href="#"
-                >
-                    Politika kolačića
-                </a>
+                <router-link to="terms-and-conditions" class="text-styling grey-link-color font-weight-bold mb-0">
+                    Terms & Conditions, Privacy & Cookie Policy
+                </router-link>
             </v-col>
             <v-col
                 cols="12"

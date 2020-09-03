@@ -1,9 +1,7 @@
 <template>
     <v-app>
         <ScrollToTop/>
-        <NavigationDrawer :drawer.sync="drawer"/>
         <AppBar
-            :drawer.sync="drawer"
             :currentRouteName="$router.currentRoute.name"
             :intersecting.sync="intersecting"
         />
@@ -27,7 +25,6 @@
 import Footer from '@/components/Footer.vue';
 import AppBar from '@/components/AppBar.vue';
 import ScrollToTop from '@/components/ScrollToTop.vue';
-import NavigationDrawer from '@/components/NavigationDrawer.vue';
 
 export default {
 
@@ -35,12 +32,10 @@ export default {
         Footer,
         AppBar,
         ScrollToTop,
-        NavigationDrawer,
     },
 
     data() {
         return {
-            drawer: false,
             intersecting: null,
         };
     },

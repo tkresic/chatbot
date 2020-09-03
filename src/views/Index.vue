@@ -1,55 +1,24 @@
 <template>
-    <v-row class="bg">
-        <v-col class="py-0">
+    <v-row>
+        <v-col
+            v-intersect="handleIntersect"
+            class="py-0"
+        >
             <v-row
                 align="center"
                 justify="center"
-                class="height-100vh"
+                class="index-background height-100vh"
             >
                 <v-col
                     cols="12"
-                    md="4"
-                    class="text-center"
+                    sm="6"
+                    class="gif-section text-center"
                 >
                     <img
-                        :src="require('@/assets/Placeholder.png')"
-                        height="300px"
-                        class="border-radius-15px"
+                        :src="require('@/assets/index/Animation.gif')"
+                        width="100%"
+                        height="100%"
                     />
-                </v-col>
-                <v-col
-                    cols="12"
-                    md="6"
-                    class="z-index-1 text-center text-md-left px-6"
-                >
-                    <div :class="{ 'font-size-60px': $vuetify.breakpoint.lgAndDown, 'font-size-96px': $vuetify.breakpoint.xl }">
-                        <span
-                            v-intersect="handleIntersect"
-                            class="d-inline-block mt-10 font-weight-bold"
-                        >
-                            d1gital
-                        </span>
-                    </div>
-                    <v-carousel
-                        cycle
-                        hide-delimiter-background
-                        hide-delimiters
-                        :show-arrows="false"
-                        interval="3000"
-                        height="100"
-                    >
-                        <v-carousel-item
-                            v-for="(slide, i) in slides"
-                            :key="i"
-                        >
-                             <span class="grey--text">
-                                 {{ slide }}
-                             </span>
-                        </v-carousel-item>
-                    </v-carousel>
-                    <br/>
-
-                    <br/>
                 </v-col>
             </v-row>
             <v-row
@@ -59,29 +28,11 @@
                 class="height-100vh"
             >
                 <v-col
-                    v-animate.fade="'slide-up'"
-                    cols="12"
-                    md="4"
-                    class="animation-class"
-                >
-                    <v-row class="justify-center justify-md-start">
-                        <v-col 
-                            cols="auto" 
-                            class="text-center"
-                        >
-                            <img
-                                :src="require('@/assets/Placeholder.png')"
-                                width="400px"
-                            />
-                        </v-col>
-                    </v-row>
-                </v-col>
-                <v-col
                     cols="12"
                     md="4"
                     class="text-center text-md-left animation-class"
                     :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                    :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
+                    :order="$vuetify.breakpoint.mdAndUp ? 'first' : 'last'"
                     v-animate.fade="'slide-up'"
                 >
                     <h1
@@ -117,12 +68,31 @@
                         quam.
                     </p>
                 </v-col>
+                <v-col
+                    v-animate.fade="'slide-up'"
+                    cols="12"
+                    md="4"
+                    class="animation-class"
+                >
+                    <v-row class="justify-center">
+                        <v-col
+                            cols="auto"
+                            class="text-center"
+                        >
+                            <img
+                                :src="require('@/assets/Placeholder.png')"
+                                width="400px"
+                            />
+                        </v-col>
+                    </v-row>
+                </v-col>
             </v-row>
             <v-row
                 id="services"
                 justify="center"
                 align="center"
-                class="navy-blue-bg height-100vh white--text"
+                class="navy-blue-bg white--text"
+                :class="{ 'height-100vh' : $vuetify.breakpoint.smAndUp }"
             >
                 <v-col
                     cols="12"
@@ -147,9 +117,8 @@
                         <v-col
                             cols="12"
                             sm="6"
-                            class="text-left animation-class mx-6"
+                            class="text-center text-sm-left animation-class mx-6"
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
                             v-animate.fade="'slide-up'"
                         >
                             <h1
@@ -187,9 +156,8 @@
                         <v-col
                             cols="12"
                             sm="6"
-                            class="text-left animation-class mx-6"
+                            class="text-center text-sm-left animation-class mx-6"
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
                             v-animate.fade="'slide-up'"
                         >
                             <h1>Title</h1>
@@ -222,9 +190,8 @@
                         <v-col
                             cols="12"
                             sm="6"
-                            class="text-left animation-class mx-6"
+                            class="text-center text-sm-left animation-class mx-6"
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
                             v-animate.fade="'slide-up'"
                         >
                             <h1>Title</h1>
@@ -262,9 +229,8 @@
                         <v-col
                             cols="12"
                             sm="6"
-                            class="text-left animation-class mx-6"
+                            class="text-center text-sm-left animation-class mx-6"
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
                             v-animate.fade="'slide-up'"
                         >
                             <h1>Title</h1>
@@ -297,9 +263,8 @@
                         <v-col
                             cols="12"
                             sm="6"
-                            class="text-left animation-class mx-6"
+                            class="text-center text-sm-left animation-class mx-6"
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
                             v-animate.fade="'slide-up'"
                         >
                             <h1>Title</h1>
@@ -332,9 +297,8 @@
                         <v-col
                             cols="12"
                             sm="6"
-                            class="text-left animation-class mx-6"
+                            class="text-center text-sm-left animation-class mx-6"
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            :order="$vuetify.breakpoint.mdAndDown ? 'first' : 'last'"
                             v-animate.fade="'slide-up'"
                         >
                             <h1>Title</h1>
@@ -384,6 +348,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+.index-background {
+    background: url('../assets/index/Background.png')  no-repeat center;
+}
 
 .text-styling {
     font-size: 14px;
@@ -478,6 +446,11 @@ export default {
 
 .navy-blue-bg {
     background: #000080;
+}
+
+.gif-section {
+    background: #fff;
+    border: 10px solid #000;
 }
 
 </style>
