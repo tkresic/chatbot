@@ -1,7 +1,8 @@
 <template>
     <v-footer
+        id="contact"
         :color="$vuetify.breakpoint.mdAndDown ? 'rgba(83, 100, 190, 0.05)' : '#fafafa'"
-        class="footer"
+        class="footer contact"
     >
         <v-row
             justify="center"
@@ -26,13 +27,13 @@
                 <a
                     class="text-styling link font-weight-bold mb-0"
                     target="_blank"
-                    href="tel:123-456-7890"
+                    href="tel:098/988-1519"
                 >
-                    Tel: 123-456-7890
+                    Tel: 098/988-1519
                 </a>
                 <br/>
                 <p class="text-styling  mb-0">
-                    Ulica grada Zagreba, Zagreb 10 000, Hrvatska
+                    Majdanski put 6, Zagreb 10 000, Hrvatska
                 </p>
             </v-col>
             <v-col
@@ -46,7 +47,21 @@
                     to="uvjeti-i-odredbe"
                     class="text-styling link font-weight-bold mb-0"
                 >
-                    Uvjeti i odredbe, politika privatnosti i politika kolačića.
+                    Uvjeti i odredbe
+                </router-link>
+                <br>
+                <router-link
+                    to="uvjeti-i-odredbe#politika-privatnosti"
+                    class="text-styling link font-weight-bold mb-0"
+                >
+                    Politika privatnosti
+                </router-link>
+                <br>
+                <router-link
+                    to="uvjeti-i-odredbe#politika-kolacica"
+                    class="text-styling link font-weight-bold mb-0"
+                >
+                    Politika kolačića.
                 </router-link>
             </v-col>
             <v-col
@@ -78,7 +93,7 @@ export default Vue.extend({
     name: 'Footer',
 
     data: () => ({
-        icons: ['facebook', 'mdi-google-plus', 'mdi-instagram', 'mdi-linkedin'],
+        icons: ['facebook', 'mdi-linkedin', 'mdi-instagram', 'mdi-youtube'],
     })
 });
 

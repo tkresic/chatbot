@@ -77,7 +77,7 @@
                 </v-col>
             </v-row>
             <v-row
-                id="services"
+                id="why-dooh"
                 justify="center"
                 align="center"
                 class="navy-blue-section py-12"
@@ -110,7 +110,7 @@
                         >
                             <h1
                                 v-intersect="handleIntersect"
-                                class="services"
+                                class="why-dooh"
                             >
                                 Atraktivnost
                             </h1>

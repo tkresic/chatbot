@@ -13,42 +13,43 @@
                 >
                     <div>
                         <h2><strong>Uvjeti i odredbe</strong></h2>
-                        <p>Dobrodošli na d1gital.hr!</p>
+                        <p>Dobrodošli na D1GITAL.hr!</p>
                         <p>
-                            Ovi uvjeti opisuju pravila i propise za upotrebu web stranice d1gital j.d.o.o., koja se nalazi na https://d1gital.hr.
+                            Ovi uvjeti opisuju pravila i propise za upotrebu web stranice D1GITAL j.d.o.o., koja se nalazi na https://D1GITAL.hr.
                         </p>
                         <p>
-                            Pristupanjem ovom web mjestu pretpostavljamo da prihvaćate ove uvjete i odredbe. Ne nastavljajte koristiti d1gital.hr ako se ne slažete s prihvaćanjem svih odredbi i uvjeta navedenih na ovoj stranici.                        </p>
+                            Pristupanjem ovom web mjestu pretpostavljamo da prihvaćate ove uvjete i odredbe. Ne nastavljajte koristiti D1GITAL.hr ako se ne slažete s prihvaćanjem svih odredbi i uvjeta navedenih na ovoj stranici.                        </p>
                         <p>
                             Sljedeća se terminologija odnosi na ove Uvjete i odredbe, Izjavu o privatnosti i Obavijest o odricanju odgovornosti te na sve Ugovore: "Klijent", "Vi" i "Vaša" odnosi se na vas, osobu koja se prijavljuje na ovu web stranicu i u skladu s uvjetima i odredbama tvrtke. "Tvrtka", "Mi sami", "Mi", "Naši" i "Mi" odnosi se na našu tvrtku. "Stranka", "Stranke" ili "Mi" odnosi se i na Klijenta i na nas same. Svi se uvjeti odnose na ponudu, prihvaćanje i razmatranje plaćanja potrebnih za provođenje postupka pružanja naše pomoći Klijentu na najprikladniji način, izričito u svrhu zadovoljenja potreba Klijenta u pogledu pružanja navedenih usluga Društva, u skladu s i podliježe važećem zakonu Nizozemske. Svaka upotreba gornje terminologije ili drugih riječi u jednini, množini, pisanju velikih slova i / ili on / ona ili oni, uzimaju se kao zamjenjivi i prema tome odnose se na istu.
                         </p>
+                        <a name="politika-kolacica"></a>
                         <h3><strong>Kolačići</strong></h3>
                         <p>
-                            Zapošljavamo upotrebu kolačića. Pristupom d1gitalu pristali ste na upotrebu kolačića u skladu s Pravilima o privatnosti d1gital j.d.o.o..
+                            Zapošljavamo upotrebu kolačića. Pristupom D1GITALu pristali ste na upotrebu kolačića u skladu s Pravilima o privatnosti D1GITAL j.d.o.o..
                         </p>
                         <p>
                             Većina interaktivnih web stranica koristi kolačiće kako bi nam omogućili dohvat korisničkih podataka za svaki posjet. Naša web stranica koristi kolačiće kako bi omogućila funkcionalnost određenih područja kako bi olakšala posjetiteljima naše web stranice. Neki od naših povezanih partnera / oglašivača također mogu koristiti kolačiće.
                         </p>
                         <h3><strong>Licenca</strong></h3>
                         <p>
-                            Ako nije drugačije navedeno, d1gital j.d.o.o. i / ili njegovi davatelji licence posjeduju prava intelektualnog vlasništva za sav materijal na d1gitalu. Sva prava intelektualnog vlasništva su pridržana. Ovome možete pristupiti iz d1gitala za vlastitu upotrebu podložno ograničenjima postavljenim u ovim uvjetima.
+                            Ako nije drugačije navedeno, D1GITAL j.d.o.o. i / ili njegovi davatelji licence posjeduju prava intelektualnog vlasništva za sav materijal na D1GITALu. Sva prava intelektualnog vlasništva su pridržana. Ovome možete pristupiti iz D1GITALa za vlastitu upotrebu podložno ograničenjima postavljenim u ovim uvjetima.
                         </p>
                         <p>Ne smiješ:</p>
                         <ul>
-                            <li>Ponovno objaviti materijal iz d1gitala</li>
-                            <li>Prodaja, iznajmljivanje ili podlicenca materijala tvrtke d1gital</li>
-                            <li>Umnožavanje, dupliciranje ili kopiranje materijala s d1gital</li>
-                            <li>Preraspodijelite sadržaj s d1gitala</li>
+                            <li>Ponovno objaviti materijal iz D1GITALa</li>
+                            <li>Prodaja, iznajmljivanje ili podlicenca materijala tvrtke D1GITAL</li>
+                            <li>Umnožavanje, dupliciranje ili kopiranje materijala s D1GITAL</li>
+                            <li>Preraspodijelite sadržaj s D1GITALa</li>
                         </ul>
                         <p>
                             Ovaj Ugovor započinje na datum ovog Ugovora.
                             Naši uvjeti i odredbe stvoreni su uz pomoć <a target="_blank" href="https://www.termsandconditionsgenerator.com">generatora odredbi i uvjeta</a> and the <a target="_blank" href="https://www.generateprivacypolicy.com">i generatora politika privatnosti.</a>.
                         </p>
                         <p>
-                            Dijelovi ove web stranice pružaju priliku korisnicima da objavljuju i razmjenjuju mišljenja i informacije u određenim dijelovima web stranice. d1gital j.d.o.o. ne filtrira, uređuje, objavljuje ili pregledava komentare prije njihove prisutnosti na web mjestu. Komentari ne odražavaju stavove i mišljenja d1gital j.d.o.o., njegovih agenata i / ili povezanih društava. Komentari odražavaju stavove i mišljenja osobe koja objavljuje svoje stavove i mišljenja. U mjeri u kojoj to dopuštaju važeći zakoni, d1gital j.d.o.o. neće biti odgovoran za Komentari ili bilo kakvu odgovornost, štetu ili troškove koji su prouzročeni i / ili pretrpljeni kao rezultat bilo kakvog korištenja i / ili objavljivanja i / ili pojavljivanja komentara na ovom web mjestu.
+                            Dijelovi ove web stranice pružaju priliku korisnicima da objavljuju i razmjenjuju mišljenja i informacije u određenim dijelovima web stranice. D1GITAL j.d.o.o. ne filtrira, uređuje, objavljuje ili pregledava komentare prije njihove prisutnosti na web mjestu. Komentari ne odražavaju stavove i mišljenja D1GITAL j.d.o.o., njegovih agenata i / ili povezanih društava. Komentari odražavaju stavove i mišljenja osobe koja objavljuje svoje stavove i mišljenja. U mjeri u kojoj to dopuštaju važeći zakoni, D1GITAL j.d.o.o. neće biti odgovoran za Komentari ili bilo kakvu odgovornost, štetu ili troškove koji su prouzročeni i / ili pretrpljeni kao rezultat bilo kakvog korištenja i / ili objavljivanja i / ili pojavljivanja komentara na ovom web mjestu.
                         </p>
                         <p>
-                            d1gital j.d.o.o. zadržava pravo nadgledati sve komentare i ukloniti sve komentare koji se mogu smatrati neprikladnim, uvredljivim ili uzrokuju kršenje ovih Uvjeta i odredbi.
+                            D1GITAL j.d.o.o. zadržava pravo nadgledati sve komentare i ukloniti sve komentare koji se mogu smatrati neprikladnim, uvredljivim ili uzrokuju kršenje ovih Uvjeta i odredbi.
                         </p>
                         <p>Jamčite i zastupate sljedeće:</p>
                         <ul>
@@ -66,7 +67,7 @@
                             </li>
                         </ul>
                         <p>
-                            Ovim odobravate d1gital j.d.o.o. neekskluzivna licenca za upotrebu, reprodukciju, uređivanje i ovlaštenje drugih da koriste, reproduciraju i uređuju bilo koji vaš komentar u bilo kojem obliku, formatu ili mediju.
+                            Ovim odobravate D1GITAL j.d.o.o. neekskluzivna licenca za upotrebu, reprodukciju, uređivanje i ovlaštenje drugih da koriste, reproduciraju i uređuju bilo koji vaš komentar u bilo kojem obliku, formatu ili mediju.
                         </p>
                         <h3><strong>Hiperveza na naš sadržaj</strong></h3>
                         <p>
@@ -99,13 +100,13 @@
                             <li>obrazovne institucije i trgovačka udruženja.</li>
                         </ul>
                         <p>
-                            Odobrit ćemo zahtjeve za povezivanje ovih organizacija ako odlučimo da: (a) veza ne bi dovela do toga da izgledamo nepovoljno prema sebi ili našem akreditiranom poslovanju; (b) organizacija nema negativne evidencije s nama; (c) korist za nas od vidljivosti hiperveze nadoknađuje odsutnost d1gital j.d.o.o .; i (d) veza je u kontekstu općih informacija o resursima.
+                            Odobrit ćemo zahtjeve za povezivanje ovih organizacija ako odlučimo da: (a) veza ne bi dovela do toga da izgledamo nepovoljno prema sebi ili našem akreditiranom poslovanju; (b) organizacija nema negativne evidencije s nama; (c) korist za nas od vidljivosti hiperveze nadoknađuje odsutnost D1GITAL j.d.o.o .; i (d) veza je u kontekstu općih informacija o resursima.
                         </p>
                         <p>
                             Te organizacije mogu voditi do naše početne stranice sve dok veza: (a) ni na koji način ne vara; (b) ne podrazumijeva lažno sponzorstvo, odobrenje ili odobrenje povezivačke strane i njezinih proizvoda ili usluga; i (c) uklapa se u kontekst web mjesta povezivača.
                         </p>
                         <p>
-                            Ako ste jedna od organizacija navedenih u stavku 2. gore i želite se povezati na našu web stranicu, morate nas obavijestiti slanjem e-pošte na d1gital jdoo. Navedite svoje ime, ime svoje organizacije, podatke za kontakt kao i URL vašeg web mjesta, popis svih URL-ova s kojih se želite povezati na našu web stranicu i popis URL-ova na našoj web stranici na koje želite povezati. Pričekajte 2-3 tjedna za odgovor.
+                            Ako ste jedna od organizacija navedenih u stavku 2. gore i želite se povezati na našu web stranicu, morate nas obavijestiti slanjem e-pošte na D1GITAL jdoo. Navedite svoje ime, ime svoje organizacije, podatke za kontakt kao i URL vašeg web mjesta, popis svih URL-ova s kojih se želite povezati na našu web stranicu i popis URL-ova na našoj web stranici na koje želite povezati. Pričekajte 2-3 tjedna za odgovor.
                         </p>
                         <p>
                             Odobrene organizacije mogu hipervezu na našu web stranicu kako slijedi:
@@ -118,7 +119,7 @@
                             </li>
                         </ul>
                         <p>
-                            Nijedna uporaba logotipa d1gital j.d.o.o. ili drugog umjetničkog djela neće biti dopuštena za povezivanje bez odsutnosti ugovora o licenciranju zaštitnog znaka.
+                            Nijedna uporaba logotipa D1GITAL j.d.o.o. ili drugog umjetničkog djela neće biti dopuštena za povezivanje bez odsutnosti ugovora o licenciranju zaštitnog znaka.
                         </p>
                         <h3><strong>iFrame-ovi</strong></h3>
                         <p>
@@ -128,6 +129,7 @@
                         <p>
                             Nećemo biti odgovorni za bilo kakav sadržaj koji se pojavljuje na vašoj web stranici. Pristajete na zaštitu i zaštitu od svih zahtjeva koji se pojavljuju na vašoj web stranici. Nijedna se veza ne smije pojaviti na bilo kojoj web stranici koja se može protumačiti kao kleveta, opscena ili kriminalna ili koja krši, na drugi način krši ili zagovara kršenje ili neko drugo kršenje prava bilo koje treće strane.
                         </p>
+                        <a name="politika-privatnosti"></a>
                         <h3><strong>Vaša privatnost</strong></h3>
                         <p>Molimo pročitajte Pravila o privatnosti</p>
                         <h3><strong>Rezervacija prava</strong></h3>

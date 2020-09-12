@@ -2,39 +2,51 @@
     <v-app-bar
         color="rgba(255,255,255, 0.95)"
         height="75"
-        class="elevation-1"
+        class="elevation-0"
         fixed
+        hide-on-scroll
         :style="{ 'z-index': 6 }"
     >
         <template v-if="$vuetify.breakpoint.smAndUp">
             <v-img
                 @click="$vuetify.goTo(0)"
                 :src="require('@/assets/Digital.png')"
-                max-width="90px"
-                max-height="90px"
+                max-width="150px"
+                max-height="150px"
                 alt="d1gital Logo"
-                class="cursor-pointer"
+                class="cursor-pointer ml-16"
             ></v-img>
             <v-spacer></v-spacer>
         </template>
         <template v-if="currentRouteName === 'index'">
             <v-row :justify="$vuetify.breakpoint.smAndUp ? 'end' : 'center'">
-                <v-col cols="auto">
+                <v-col
+                    cols="auto"
+                    class="text-center"
+                >
                     <v-btn
                         @click="$vuetify.goTo('#about')"
-                        class="hover-animation text-uppercase mx-3 px-0"
+                        class="hover-animation app-bar-font-size text-uppercase mx-3 px-0"
                         :class="{ 'hover-animation-active': intersecting === 'about'}"
                         text
                     >
                         O nama
                     </v-btn>
                     <v-btn
-                        @click="$vuetify.goTo('#services')"
-                        class="hover-animation text-uppercase mx-3 px-0"
-                        :class="{ 'hover-animation-active': intersecting === 'services'}"
+                        @click="$vuetify.goTo('#why-dooh')"
+                        class="hover-animation app-bar-font-size text-uppercase mx-3 px-0"
+                        :class="{ 'hover-animation-active': intersecting === 'why-dooh'}"
                         text
                     >
-                        Pokrenite svoj marketing
+                        Zašto DOOH
+                    </v-btn>
+                    <v-btn
+                        @click="$vuetify.goTo('#contact')"
+                        class="hover-animation app-bar-font-size text-uppercase mx-3 px-0"
+                        :class="{ 'hover-animation-active': intersecting === 'contact', 'mr-16' : $vuetify.breakpoint.smAndUp }"
+                        text
+                    >
+                        Kontakt
                     </v-btn>
                 </v-col>
             </v-row>
@@ -42,7 +54,7 @@
         <template v-else>
             <v-btn
                 @click.stop="$router.push('/')"
-                class="hover-animation text-uppercase"
+                class="hover-animation app-bar-font-size text-uppercase"
                 text
             >
                 Nazad na početnu
@@ -63,3 +75,11 @@ export default Vue.extend({
 
 })
 </script>
+
+<style>
+
+.app-bar-font-size {
+    font-size: 12px !important;
+}
+
+</style>
