@@ -45,6 +45,13 @@ export default {
 
 <style lang="scss">
 
+body {
+    li, p {
+        font-family: 'Helvetica Regular', sans-serif;
+        color: #4a4a4a;
+    }
+}
+
 .v-select:not(.do-not-apply-transform) {
     transform: scale(0.75);
     margin-top: 16px;
@@ -86,13 +93,6 @@ export default {
     transition: 0.2s ease-in-out;
 }
 
-.grey-background {
-    margin-top: 2px;
-    span {
-        background: #7b7b7b;
-    }
-}
-
 .nav-ham span:nth-child(1) {
     top: 15px;
 }
@@ -126,7 +126,7 @@ export default {
         width: 100%;
         height: 3px;
         transform: scaleX(0);
-        background-color: #1976d2;
+        background-color: #4285F4;
         transition: transform 0.3s;
     }
     &:hover {

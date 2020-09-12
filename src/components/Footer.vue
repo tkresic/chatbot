@@ -12,11 +12,11 @@
                 cols="12"
                 sm="4"
             >
-                <p class="grey-text font-weight-bold mb-0">
-                    About
+                <p class="font-weight-bold mb-0">
+                    O nama
                 </p>
                 <a
-                    class="text-styling grey-link-color font-weight-bold mb-0"
+                    class="text-styling link font-weight-bold mb-0"
                     target="_blank"
                     href="mailto:info@d1gital.com"
                 >
@@ -24,14 +24,14 @@
                 </a>
                 <br>
                 <a
-                    class="text-styling grey-link-color font-weight-bold mb-0"
+                    class="text-styling link font-weight-bold mb-0"
                     target="_blank"
                     href="tel:123-456-7890"
                 >
-                    123-456-7890
+                    Tel: 123-456-7890
                 </a>
                 <br/>
-                <p class="text-styling grey-link-color mb-0">
+                <p class="text-styling  mb-0">
                     Ulica grada Zagreba, Zagreb 10 000, Hrvatska
                 </p>
             </v-col>
@@ -39,26 +39,29 @@
                 cols="12"
                 sm="4"
             >
-                <p class="grey-text font-weight-bold mb-0">
-                    Legal
+                <p class="font-weight-bold mb-0">
+                    Legalne stvari
                 </p>
-                <router-link to="terms-and-conditions" class="text-styling grey-link-color font-weight-bold mb-0">
-                    Terms & Conditions, Privacy & Cookie Policy
+                <router-link
+                    to="uvjeti-i-odredbe"
+                    class="text-styling link font-weight-bold mb-0"
+                >
+                    Uvjeti i odredbe, politika privatnosti i politika kolačića.
                 </router-link>
             </v-col>
             <v-col
                 cols="12"
                 sm="4"
             >
-                <p class="grey-text font-weight-bold mb-0">
-                    Connect
+                <p class="font-weight-bold mb-0">
+                    Povežite se
                 </p>
                 <v-btn
                     v-for="icon in icons"
                     :key="icon"
-                    icon
-                    color="primary"
+                    color="#4285F4"
                     class="mx-1"
+                    icon
                 >
                     <v-icon size="24px">{{ icon }}</v-icon>
                 </v-btn>
@@ -75,8 +78,20 @@ export default Vue.extend({
     name: 'Footer',
 
     data: () => ({
-        icons: ['facebook', 'mdi-twitter', 'mdi-google-plus', 'mdi-instagram', 'mdi-linkedin', 'mdi-whatsapp'],
+        icons: ['facebook', 'mdi-google-plus', 'mdi-instagram', 'mdi-linkedin'],
     })
 });
 
 </script>
+
+<style>
+
+.footer {
+    font-size: 14px;
+}
+
+.link {
+    color: #747474e6 !important;
+}
+
+</style>

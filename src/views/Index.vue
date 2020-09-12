@@ -1,31 +1,31 @@
 <template>
     <v-row>
-        <v-col
-            v-intersect="handleIntersect"
-            class="py-0"
-        >
+        <v-col class="py-0">
             <v-row
-                align="center"
-                justify="center"
                 class="index-background height-100vh"
+                justify="center"
+                :align="$vuetify.breakpoint.smAndUp ? 'start' : 'center'"
             >
                 <v-col
                     cols="12"
-                    sm="6"
-                    class="gif-section text-center"
+                    class="text-center text-sm-left"
+
                 >
-                    <img
-                        :src="require('@/assets/index/Animation.gif')"
-                        width="100%"
-                        height="100%"
-                    />
+                    <h1
+                        v-intersect="handleIntersect"
+                        class="header-color"
+                        :class="{ 'header-font-size header-margins': $vuetify.breakpoint.smAndUp }"
+                    >
+                        Na pravom mjestu
+                    </h1>
                 </v-col>
             </v-row>
             <v-row
                 id="about"
                 justify="center"
                 align="center"
-                class="height-100vh"
+                class="py-12"
+                :class="{ 'height-100vh' : $vuetify.breakpoint.smAndUp }"
             >
                 <v-col
                     cols="12"
@@ -39,33 +39,22 @@
                         v-intersect="handleIntersect"
                         class="about"
                     >
-                        About
+                        O nama
                     </h1>
-                    <p class="grey--text">
-                        Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                        vulputate
-                        neque, a eleifend est nunc non velit. Nulla facilisi.
-                        Suspendisse
-                        potenti. Nunc vel libero purus. In hac habitasse platea
-                        dictumst.
-                        Pellentesque cursus nisi nisi, sit amet faucibus quam
-                        malesuada ut.
-                        Vestibulum purus tellus, molestie id mi eget, sagittis
-                        convallis
-                        quam.
+                    <p>
+                        D1GITAL je novi brend multimedijskog digitalnog oglašavanja u OOH (Out-Of-Home) industriji koji kroz vlastitu mrežu digitalnih billboarda širi vaše tržište.
                     </p>
-                    <p class="grey--text">
-                        Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                        vulputate
-                        neque, a eleifend est nunc non velit. Nulla facilisi.
-                        Suspendisse
-                        potenti. Nunc vel libero purus. In hac habitasse platea
-                        dictumst.
-                        Pellentesque cursus nisi nisi, sit amet faucibus quam
-                        malesuada ut.
-                        Vestibulum purus tellus, molestie id mi eget, sagittis
-                        convallis
-                        quam.
+                    <h4>
+                        Nije stvar veličine, stvar je preciznosti
+                    </h4>
+                    <p>
+                        Naša mreža billboarda raste, a od ključne je važnosti da vam nudimo oglašavanje na najatraktivnijim lokacijama u Zagrebu kako bismo vam osigurali najbolju uslugu.
+                    </p>
+                    <h4>
+                        Pratimo rezultate
+                    </h4>
+                    <p>
+                        Uz nas nije teško pratiti OOH rezultate. Svi naši digitalni billboardi su opremljeni kamerama koje omogućavaju mjerenje uspjeha vašeg oglašavanja
                     </p>
                 </v-col>
                 <v-col
@@ -81,7 +70,7 @@
                         >
                             <img
                                 :src="require('@/assets/Placeholder.png')"
-                                width="400px"
+                                width="300px"
                             />
                         </v-col>
                     </v-row>
@@ -91,7 +80,7 @@
                 id="services"
                 justify="center"
                 align="center"
-                class="navy-blue-bg white--text"
+                class="navy-blue-section py-12"
                 :class="{ 'height-100vh' : $vuetify.breakpoint.smAndUp }"
             >
                 <v-col
@@ -107,12 +96,10 @@
                             cols="auto"
                             class="animation-class mx-6"
                         >
-                            <v-icon
-                                x-large
-                                dark
-                            >
-                                edit
-                            </v-icon>
+                            <img
+                                :src="require('@/assets/index/icons/Attraction.png')"
+                                width="60px"
+                            />
                         </v-col>
                         <v-col
                             cols="12"
@@ -125,15 +112,10 @@
                                 v-intersect="handleIntersect"
                                 class="services"
                             >
-                                Title
+                                Atraktivnost
                             </h1>
-                            <p>
-                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                                vulputate
-                                neque, a eleifend est nunc non velit. Nulla facilisi.
-                                Suspendisse
-                                potenti. Nunc vel libero purus. In hac habitasse platea
-                                dictumst.
+                            <p class="white--text">
+                                Frekventne i atraktivne lokacije u Zagrebu osigurat će veliki doseg vaše digitalne kampanje.
                             </p>
                         </v-col>
                     </v-row>
@@ -146,12 +128,10 @@
                             cols="auto"
                             class="animation-class mx-6"
                         >
-                            <v-icon
-                                x-large
-                                dark
-                            >
-                                edit
-                            </v-icon>
+                            <img
+                                :src="require('@/assets/index/icons/Measurable.png')"
+                                width="60px"
+                            />
                         </v-col>
                         <v-col
                             cols="12"
@@ -160,14 +140,9 @@
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
                             v-animate.fade="'slide-up'"
                         >
-                            <h1>Title</h1>
-                            <p>
-                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                                vulputate
-                                neque, a eleifend est nunc non velit. Nulla facilisi.
-                                Suspendisse
-                                potenti. Nunc vel libero purus. In hac habitasse platea
-                                dictumst.
+                            <h1>Mjerljivost</h1>
+                            <p class="white--text">
+                                Kamere u kombinaciji s pametnim software rješenjima pružaju vam mogućnost mjerenje uspjeha.
                             </p>
                         </v-col>
                     </v-row>
@@ -180,12 +155,10 @@
                             cols="auto"
                             class="animation-class mx-6"
                         >
-                            <v-icon
-                                x-large
-                                dark
-                            >
-                                edit
-                            </v-icon>
+                            <img
+                                :src="require('@/assets/index/icons/Agile.png')"
+                                width="60px"
+                            />
                         </v-col>
                         <v-col
                             cols="12"
@@ -194,14 +167,9 @@
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
                             v-animate.fade="'slide-up'"
                         >
-                            <h1>Title</h1>
-                            <p>
-                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                                vulputate
-                                neque, a eleifend est nunc non velit. Nulla facilisi.
-                                Suspendisse
-                                potenti. Nunc vel libero purus. In hac habitasse platea
-                                dictumst.
+                            <h1>Agilnost</h1>
+                            <p class="white--text">
+                                Hands-on pristup i fokusiranost na uspjeh svakog našeg partnera omogućava vam ažuriranje kampanja, izmjenu kreative i brigu o vašoj promociji u svakom trenutku.
                             </p>
                         </v-col>
                     </v-row>
@@ -219,12 +187,10 @@
                             cols="auto"
                             class="animation-class mx-6"
                         >
-                            <v-icon
-                                x-large
-                                dark
-                            >
-                                edit
-                            </v-icon>
+                            <img
+                                :src="require('@/assets/index/icons/Visible.png')"
+                                width="60px"
+                            />
                         </v-col>
                         <v-col
                             cols="12"
@@ -233,14 +199,9 @@
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
                             v-animate.fade="'slide-up'"
                         >
-                            <h1>Title</h1>
-                            <p>
-                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                                vulputate
-                                neque, a eleifend est nunc non velit. Nulla facilisi.
-                                Suspendisse
-                                potenti. Nunc vel libero purus. In hac habitasse platea
-                                dictumst.
+                            <h1>Uočljivost</h1>
+                            <p class="white--text">
+                                Digitalna reklama je budućnost. Dok drugi stoje, vi se pokrenite! Privucite pažnju svojeg tržišta.
                             </p>
                         </v-col>
                     </v-row>
@@ -253,12 +214,10 @@
                             cols="auto"
                             class="animation-class mx-6"
                         >
-                            <v-icon
-                                x-large
-                                dark
-                            >
-                                edit
-                            </v-icon>
+                            <img
+                                :src="require('@/assets/index/icons/Relevant.png')"
+                                width="60px"
+                            />
                         </v-col>
                         <v-col
                             cols="12"
@@ -267,14 +226,9 @@
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
                             v-animate.fade="'slide-up'"
                         >
-                            <h1>Title</h1>
-                            <p>
-                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                                vulputate
-                                neque, a eleifend est nunc non velit. Nulla facilisi.
-                                Suspendisse
-                                potenti. Nunc vel libero purus. In hac habitasse platea
-                                dictumst.
+                            <h1>Relevantnost</h1>
+                            <p class="white--text">
+                                Prilagodite svoje poruke prema dobu dana, vremenskim uvjetima ili bilo kojem drugom parametru, a mi ćemo ih isporučiti onda kada su najrelevantnije.
                             </p>
                         </v-col>
                     </v-row>
@@ -287,12 +241,10 @@
                             cols="auto"
                             class="animation-class mx-6"
                         >
-                            <v-icon
-                                x-large
-                                dark
-                            >
-                                edit
-                            </v-icon>
+                            <img
+                                :src="require('@/assets/index/icons/EcoFriendly.png')"
+                                width="60px"
+                            />
                         </v-col>
                         <v-col
                             cols="12"
@@ -301,14 +253,9 @@
                             :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
                             v-animate.fade="'slide-up'"
                         >
-                            <h1>Title</h1>
-                            <p>
-                                Phasellus ornare, leo in vehicula ultrices, ipsum eros
-                                vulputate
-                                neque, a eleifend est nunc non velit. Nulla facilisi.
-                                Suspendisse
-                                potenti. Nunc vel libero purus. In hac habitasse platea
-                                dictumst.
+                            <h1>Eco-Friendly</h1>
+                            <p class="white--text">
+                                Prelaskom s tradicionalnih na digitalne billboarde uklanja se otpad, voda, tinta i otapala potrebna za proizvodnju tiskanih natpisa, a samim time se smanjuje negativan utjecaj na okoliš.
                             </p>
                         </v-col>
                     </v-row>
@@ -323,18 +270,6 @@
 export default {
 
     props: ['intersecting'],
-
-    data() {
-        return {
-            slides: [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat nisi eu arcu suscipit malesuada. Donec euismod euismod lacus, sit amet feugiat ipsum aliquam ac. Etiam eget purus nec felis auctor convallis et nec leo. Aliquam ullamcorper mauris et convallis mattis. Sed sollicitudin aliquam scelerisque. Aenean suscipit velit et erat faucibus placerat. Vestibulum leo orci, consectetur ac egestas non, aliquet sit amet quam. Curabitur congue molestie quam ut aliquam. Ut a facilisis libero. Proin cursus, ipsum id posuere volutpat, eros purus congue magna, eget imperdiet lorem diam et sapien. Nulla at sagittis nisi. Ut et dui sed diam fringilla tristique.',
-                'Proin vitae facilisis dolor. Ut ornare fermentum risus, sed faucibus elit suscipit in. Morbi auctor ipsum posuere, suscipit est sed, tempor erat. Vivamus tempus mauris orci, at tincidunt felis imperdiet sit amet. Cras quis quam volutpat, vulputate nisl eget, ullamcorper augue. Vivamus quis ante vitae enim sagittis interdum vitae quis eros. In et lacus orci. Nulla mattis, sapien sed congue efficitur, neque nunc volutpat mi, vel vulputate massa tortor id tortor. Mauris eleifend, lectus eget faucibus porta, leo arcu convallis odio, vel cursus mauris augue ut ante. Suspendisse eros ipsum, efficitur in libero in, egestas condimentum ante. Nullam non sodales lectus. Cras eget sapien quis mauris consequat placerat. Nunc suscipit ultricies sodales.',
-                'Maecenas eu facilisis diam. Nunc dolor mauris, tempus id augue eget, dignissim pulvinar nulla. Aliquam erat volutpat. Fusce rutrum venenatis nisi sit amet tempus. Vestibulum ac ipsum nec lacus feugiat accumsan sit amet pharetra ipsum. Quisque nec ante porttitor, finibus dui porttitor, pretium elit. Suspendisse potenti. Sed vestibulum ullamcorper lectus vitae mollis. Vestibulum sit amet placerat nisi. Ut quis efficitur nisl, sed tempor odio. Donec in viverra nisi. Donec metus sem, elementum ut odio rutrum, tempor varius dolor. Integer id ipsum mauris.',
-                'Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent gravida neque a nunc sagittis, in finibus ipsum varius. Nunc accumsan ornare metus ac ultrices. Vestibulum suscipit varius nisi sed feugiat. Ut hendrerit arcu ac velit luctus ultricies. Cras sit amet pellentesque quam. Nullam placerat, augue sed ullamcorper blandit, massa est venenatis elit, suscipit dignissim dui nulla at quam. Vestibulum id convallis ligula, non tempor leo.',
-                'Maecenas dignissim magna ac nulla hendrerit, ac lacinia urna facilisis. Nulla accumsan mi ut enim posuere ultrices in ut augue. Nulla at euismod magna. Curabitur egestas erat massa, vel ornare purus dictum et. Phasellus et justo eget orci rhoncus mollis. Phasellus sagittis risus commodo metus mollis imperdiet. Aliquam posuere nisi orci, cursus finibus turpis volutpat sit amet. Ut nec cursus turpis. Donec vehicula ligula vitae ex cursus commodo.',
-            ],
-        }
-    },
 
     methods: {
         handleIntersect(entries) {
@@ -354,12 +289,7 @@ export default {
 }
 
 .text-styling {
-    font-size: 14px;
     text-decoration: none;
-}
-
-.grey-link-color {
-    color: #909090e6 !important;
 }
 
 .header-img {
@@ -444,13 +374,23 @@ export default {
     top: 70px;
 }
 
-.navy-blue-bg {
-    background: #000080;
+.navy-blue-section {
+    background: #4285F4;
+    color: #fff !important;
 }
 
-.gif-section {
-    background: #fff;
-    border: 10px solid #000;
+.header-margins {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.header-color {
+    color: #4285F4;
+
+}
+
+.header-font-size {
+    font-size: 100px !important;
 }
 
 </style>

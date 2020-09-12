@@ -13,7 +13,7 @@ const routes = [
     component: Index
   },
   {
-    path: '/terms-and-conditions',
+    path: '/uvjeti-i-odredbe',
     name: 'terms-and-conditions',
     component: TermsAndConditions
   },

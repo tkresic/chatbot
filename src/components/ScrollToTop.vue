@@ -4,12 +4,12 @@
             @click="$vuetify.goTo(0)"
             v-scroll="onScroll"
             v-show="fab"
+            color="#4285F4"
             fab
             dark
             fixed
             bottom
             right
-            color="primary"
         >
             <v-icon>keyboard_arrow_up</v-icon>
         </v-btn>

@@ -6,305 +6,157 @@
                 justify="center"
                 class="margin-top-100px"
             >
-                <v-col cols="12" md="6"
-                       class="z-index-1 text-center text-md-left px-6">
-                    <div class="grey--text">
-                        <h2><strong>Terms and Conditions</strong></h2>
-                        <p>Welcome to d1gital.hr!</p>
+                <v-col
+                    cols="12"
+                    md="6"
+                    class="z-index-1 text-center text-md-left px-6"
+                >
+                    <div>
+                        <h2><strong>Uvjeti i odredbe</strong></h2>
+                        <p>Dobrodošli na d1gital.hr!</p>
                         <p>
-                            These terms and conditions outline the rules and
-                            regulations for the use of d1gital j.d.o.o.'s Website,
-                            located at https://d1gital.hr.
+                            Ovi uvjeti opisuju pravila i propise za upotrebu web stranice d1gital j.d.o.o., koja se nalazi na https://d1gital.hr.
                         </p>
                         <p>
-                            By accessing this website we assume you accept these
-                            terms and conditions. Do not continue to use d1gital.hr
-                            if you do not agree to take all of the terms and
-                            conditions stated on this page.
+                            Pristupanjem ovom web mjestu pretpostavljamo da prihvaćate ove uvjete i odredbe. Ne nastavljajte koristiti d1gital.hr ako se ne slažete s prihvaćanjem svih odredbi i uvjeta navedenih na ovoj stranici.                        </p>
+                        <p>
+                            Sljedeća se terminologija odnosi na ove Uvjete i odredbe, Izjavu o privatnosti i Obavijest o odricanju odgovornosti te na sve Ugovore: "Klijent", "Vi" i "Vaša" odnosi se na vas, osobu koja se prijavljuje na ovu web stranicu i u skladu s uvjetima i odredbama tvrtke. "Tvrtka", "Mi sami", "Mi", "Naši" i "Mi" odnosi se na našu tvrtku. "Stranka", "Stranke" ili "Mi" odnosi se i na Klijenta i na nas same. Svi se uvjeti odnose na ponudu, prihvaćanje i razmatranje plaćanja potrebnih za provođenje postupka pružanja naše pomoći Klijentu na najprikladniji način, izričito u svrhu zadovoljenja potreba Klijenta u pogledu pružanja navedenih usluga Društva, u skladu s i podliježe važećem zakonu Nizozemske. Svaka upotreba gornje terminologije ili drugih riječi u jednini, množini, pisanju velikih slova i / ili on / ona ili oni, uzimaju se kao zamjenjivi i prema tome odnose se na istu.
+                        </p>
+                        <h3><strong>Kolačići</strong></h3>
+                        <p>
+                            Zapošljavamo upotrebu kolačića. Pristupom d1gitalu pristali ste na upotrebu kolačića u skladu s Pravilima o privatnosti d1gital j.d.o.o..
                         </p>
                         <p>
-                            The following terminology applies to these Terms and
-                            Conditions, Privacy Statement and Disclaimer Notice
-                            and all Agreements: "Client", "You" and "Your"
-                            refers to you, the person log on this website and
-                            compliant to the Company’s terms and conditions.
-                            "The Company", "Ourselves", "We", "Our" and "Us",
-                            refers to our Company. "Party", "Parties", or "Us",
-                            refers to both the Client and ourselves. All terms
-                            refer to the offer, acceptance and consideration of
-                            payment necessary to undertake the process of our
-                            assistance to the Client in the most appropriate
-                            manner for the express purpose of meeting the
-                            Client’s needs in respect of provision of the
-                            Company’s stated services, in accordance with and
-                            subject to, prevailing law of Netherlands. Any use
-                            of the above terminology or other words in the
-                            singular, plural, capitalization and/or he/she or
-                            they, are taken as interchangeable and therefore as
-                            referring to same.
+                            Većina interaktivnih web stranica koristi kolačiće kako bi nam omogućili dohvat korisničkih podataka za svaki posjet. Naša web stranica koristi kolačiće kako bi omogućila funkcionalnost određenih područja kako bi olakšala posjetiteljima naše web stranice. Neki od naših povezanih partnera / oglašivača također mogu koristiti kolačiće.
                         </p>
-                        <h3><strong>Cookies</strong></h3>
+                        <h3><strong>Licenca</strong></h3>
                         <p>
-                            We employ the use of cookies. By accessing d1gital,
-                            you agreed to use cookies in agreement with the
-                            d1gital j.d.o.o.'s Privacy Policy.
+                            Ako nije drugačije navedeno, d1gital j.d.o.o. i / ili njegovi davatelji licence posjeduju prava intelektualnog vlasništva za sav materijal na d1gitalu. Sva prava intelektualnog vlasništva su pridržana. Ovome možete pristupiti iz d1gitala za vlastitu upotrebu podložno ograničenjima postavljenim u ovim uvjetima.
                         </p>
-                        <p>
-                            Most interactive websites use cookies to let us
-                            retrieve the user’s details for each visit. Cookies
-                            are used by our website to enable the functionality
-                            of certain areas to make it easier for people
-                            visiting our website. Some of our
-                            affiliate/advertising partners may also use
-                            cookies.
-                        </p>
-                        <h3><strong>License</strong></h3>
-                        <p>
-                            Unless otherwise stated, d1gital j.d.o.o. and/or its
-                            licensors own the intellectual property rights for
-                            all material on d1gital. All intellectual property
-                            rights are reserved. You may access this from
-                            d1gital for your own personal use subjected to
-                            restrictions set in these terms and conditions.
-                        </p>
-                        <p>You must not:</p>
+                        <p>Ne smiješ:</p>
                         <ul>
-                            <li>Republish material from d1gital</li>
-                            <li>Sell, rent or sub-license material from d1gital</li>
-                            <li>Reproduce, duplicate or copy material fromd1gital</li>
-                            <li>Redistribute content from d1gital</li>
+                            <li>Ponovno objaviti materijal iz d1gitala</li>
+                            <li>Prodaja, iznajmljivanje ili podlicenca materijala tvrtke d1gital</li>
+                            <li>Umnožavanje, dupliciranje ili kopiranje materijala s d1gital</li>
+                            <li>Preraspodijelite sadržaj s d1gitala</li>
                         </ul>
                         <p>
-                            This Agreement shall begin on the date hereof. Our
-                            Terms and Conditions were created with the help of the
-                            <a href="https://www.termsandconditionsgenerator.com">Terms And Conditions Generator</a> and the <a href="https://www.generateprivacypolicy.com">Privacy Policy Generator</a>.
+                            Ovaj Ugovor započinje na datum ovog Ugovora.
+                            Naši uvjeti i odredbe stvoreni su uz pomoć <a target="_blank" href="https://www.termsandconditionsgenerator.com">generatora odredbi i uvjeta</a> and the <a target="_blank" href="https://www.generateprivacypolicy.com">i generatora politika privatnosti.</a>.
                         </p>
                         <p>
-                            Parts of this website offer an opportunity for users
-                            to post and exchange opinions and information in
-                            certain areas of the website. d1gital j.d.o.o. does
-                            not filter, edit, publish or review Comments prior
-                            to their presence on the website. Comments do not
-                            reflect the views and opinions of d1gital j.d.o.o.,its
-                            agents and/or affiliates. Comments reflect the views
-                            and opinions of the person who post their views and
-                            opinions. To the extent permitted by applicable
-                            laws, d1gital j.d.o.o. shall not be liable for the
-                            Comments or for any liability, damages or expenses
-                            caused and/or suffered as a result of any use of
-                            and/or posting of and/or appearance of the Comments
-                            on this website.
+                            Dijelovi ove web stranice pružaju priliku korisnicima da objavljuju i razmjenjuju mišljenja i informacije u određenim dijelovima web stranice. d1gital j.d.o.o. ne filtrira, uređuje, objavljuje ili pregledava komentare prije njihove prisutnosti na web mjestu. Komentari ne odražavaju stavove i mišljenja d1gital j.d.o.o., njegovih agenata i / ili povezanih društava. Komentari odražavaju stavove i mišljenja osobe koja objavljuje svoje stavove i mišljenja. U mjeri u kojoj to dopuštaju važeći zakoni, d1gital j.d.o.o. neće biti odgovoran za Komentari ili bilo kakvu odgovornost, štetu ili troškove koji su prouzročeni i / ili pretrpljeni kao rezultat bilo kakvog korištenja i / ili objavljivanja i / ili pojavljivanja komentara na ovom web mjestu.
                         </p>
                         <p>
-                            d1gital j.d.o.o. reserves the right to monitor all
-                            Comments and to remove any Comments which can be
-                            considered inappropriate, offensive or causes breach
-                            of these Terms and Conditions.
+                            d1gital j.d.o.o. zadržava pravo nadgledati sve komentare i ukloniti sve komentare koji se mogu smatrati neprikladnim, uvredljivim ili uzrokuju kršenje ovih Uvjeta i odredbi.
                         </p>
-                        <p>You warrant and represent that:</p>
+                        <p>Jamčite i zastupate sljedeće:</p>
                         <ul>
                             <li>
-                                You are entitled to post the Comments on our
-                                website and have all necessary licenses and
-                                consents to do so;
+                                Imate pravo postavljati komentare na našoj web stranici i imate sve potrebne licence i saglasnosti za to;
                             </li>
                             <li>
-                                The Comments do not invade any intellectual
-                                property right, including without limitation
-                                copyright, patent or trademark of any third
-                                party;
+                                Komentari ne narušavaju nijedno pravo intelektualnog vlasništva, uključujući bez ograničenja autorska prava, patent ili zaštitni znak bilo koje treće strane;
                             </li>
                             <li>
-                                The Comments do not contain any defamatory,
-                                libelous, offensive, indecent or otherwise
-                                unlawful material which is an invasion of
-                                privacy
+                                Komentari ne sadrže klevetnički, klevetnički, uvredljivi, nepristojni ili na bilo koji drugi način nezakonit materijal koji predstavlja narušavanje privatnosti
                             </li>
                             <li>
-                                The Comments will not be used to solicit or
-                                promote business or custom or present commercial
-                                activities or unlawful activity.
+                                Komentari se neće koristiti za traženje ili promociju poslovanja ili običaja ili predstavljanje komercijalnih aktivnosti ili nezakonitih aktivnosti.
                             </li>
                         </ul>
                         <p>
-                            You hereby grant d1gital j.d.o.o. a non-exclusive
-                            license to use, reproduce, edit and authorize others
-                            to use, reproduce and edit any of your Comments in
-                            any and all forms, formats or media.
+                            Ovim odobravate d1gital j.d.o.o. neekskluzivna licenca za upotrebu, reprodukciju, uređivanje i ovlaštenje drugih da koriste, reproduciraju i uređuju bilo koji vaš komentar u bilo kojem obliku, formatu ili mediju.
                         </p>
-                        <h3><strong>Hyperlinking to our Content</strong></h3>
+                        <h3><strong>Hiperveza na naš sadržaj</strong></h3>
                         <p>
-                            The following organizations may link to our Website
-                            without prior written approval:
+                            Sljedeće organizacije mogu se povezati na našu web stranicu bez prethodnog pismenog odobrenja:
                         </p>
                         <ul>
-                            <li>Government agencies;</li>
-                            <li>Search engines;</li>
-                            <li>News organizations;</li>
+                            <li>Vladine agencije;</li>
+                            <li>Search Tražilice;</li>
+                            <li>News Novinske organizacije;</li>
                             <li>
-                                Online directory distributors may link to our
-                                Website in the same manner as they hyperlink to
-                                the Websites of other listed businesses; and
+                                Distributeri internetskih imenika mogu se povezivati s našim web mjestima na isti način kao i hiperveze do web mjesta drugih navedenih tvrtki; i
                             </li>
                             <li>
-                                System wide Accredited Businesses except
-                                soliciting non-profit organizations, charity
-                                shopping malls, and charity fundraising groups
-                                which may not hyperlink to our Web site.
+                                Akreditirana poduzeća širom sustava, osim traženja neprofitnih organizacija, dobrotvornih trgovačkih centara i dobrotvornih grupa za prikupljanje sredstava koje možda neće imati hipervezu na naše web mjesto.
                             </li>
                         </ul>
                         <p>
-                            These organizations may link to our home page, to
-                            publications or to other Website information so long
-                            as the link: (a) is not in any way deceptive; (b)
-                            does not falsely imply sponsorship, endorsement or
-                            approval of the linking party and its products
-                            and/or services; and (c) fits within the context of
-                            the linking party’s site.
+                            Te organizacije mogu se povezivati s našom početnom stranicom, publikacijama ili drugim informacijama s web mjesta sve dok veza: (a) ni na koji način ne vara; (b) ne podrazumijeva lažno sponzorstvo, odobrenje ili odobrenje povezivačke strane i njezinih proizvoda i / ili usluga; i (c) uklapa se u kontekst web mjesta povezivača.
                         </p>
                         <p>
-                            We may consider and approve other link requests from
-                            the following types of organizations:
+                            Možemo razmotriti i odobriti druge zahtjeve za povezivanje sljedećih vrsta organizacija:
                         </p>
                         <ul>
-                            <li>commonly-known consumer and/or business information sources;</li>
-                            <li>dot.com community sites;</li>
-                            <li>associations or other groups representing charities;</li>
-                            <li>online directory distributors;</li>
-                            <li>internet portals;</li>
-                            <li>accounting, law and consulting firms; and</li>
-                            <li>educational institutions and trade associations.</li>
+                            <li>općepoznati izvori potrošačkih i / ili poslovnih informacija;</li>
+                            <li>web stranice zajednice dot.com;</li>
+                            <li>4246/5000 udruge ili druge skupine koje predstavljaju dobrotvorne organizacije;</li>
+                            <li>distributeri internetskih imenika;</li>
+                            <li>internetski portali;</li>
+                            <li>računovodstvene, odvjetničke i konzultantske tvrtke;</li>
+                            <li>obrazovne institucije i trgovačka udruženja.</li>
                         </ul>
                         <p>
-                            We will approve link requests from these
-                            organizations if we decide that: (a) the link would
-                            not make us look unfavorably to ourselves or to our
-                            accredited businesses; (b) the organization does not
-                            have any negative records with us; (c) the benefit
-                            to us from the visibility of the hyperlink
-                            compensates the absence of d1gital j.d.o.o.; and (d)
-                            the link is in the context of general resource
-                            information.
+                            Odobrit ćemo zahtjeve za povezivanje ovih organizacija ako odlučimo da: (a) veza ne bi dovela do toga da izgledamo nepovoljno prema sebi ili našem akreditiranom poslovanju; (b) organizacija nema negativne evidencije s nama; (c) korist za nas od vidljivosti hiperveze nadoknađuje odsutnost d1gital j.d.o.o .; i (d) veza je u kontekstu općih informacija o resursima.
                         </p>
                         <p>
-                            These organizations may link to our home page so long
-                            as the link: (a) is not in any way deceptive; (b)
-                            does not falsely imply sponsorship, endorsement or
-                            approval of the linking party and its products or
-                            services; and (c) fits within the context of the
-                            linking party’s site.
+                            Te organizacije mogu voditi do naše početne stranice sve dok veza: (a) ni na koji način ne vara; (b) ne podrazumijeva lažno sponzorstvo, odobrenje ili odobrenje povezivačke strane i njezinih proizvoda ili usluga; i (c) uklapa se u kontekst web mjesta povezivača.
                         </p>
                         <p>
-                            If you are one of the organizations listed in
-                            paragraph 2 above and are interested in linking to
-                            our website, you must inform us by sending an e-mail
-                            to d1gital j.d.o.o.. Please include your name, your
-                            organization name, contact information as well as
-                            the URL of your site, a list of any URLs from which
-                            you intend to link to our Website, and a list of the
-                            URLs on our site to which you would like to link.
-                            Wait 2-3 weeks for a response.
+                            Ako ste jedna od organizacija navedenih u stavku 2. gore i želite se povezati na našu web stranicu, morate nas obavijestiti slanjem e-pošte na d1gital jdoo. Navedite svoje ime, ime svoje organizacije, podatke za kontakt kao i URL vašeg web mjesta, popis svih URL-ova s kojih se želite povezati na našu web stranicu i popis URL-ova na našoj web stranici na koje želite povezati. Pričekajte 2-3 tjedna za odgovor.
                         </p>
                         <p>
-                            Approved organizations may hyperlink to our Website
-                            as follows:
+                            Odobrene organizacije mogu hipervezu na našu web stranicu kako slijedi:
                         </p>
                         <ul>
-                            <li>By use of our corporate name; or</li>
-                            <li>By use of the uniform resource locator being linked to; or</li>
+                            <li>Korištenjem naziva tvrtke; ili</li>
+                            <li>Korištenjem jedinstvenog lokatora resursa na koji se veže; ili</li>
                             <li>
-                                By use of any other description of our Website
-                                being linked to that makes sense within the
-                                context and format of content on the linking
-                                party’s site.
+                                Korištenjem bilo kojeg drugog opisa povezanosti naše web stranice koji ima smisla u kontekstu i formatu sadržaja na web mjestu povezivača.
                             </li>
                         </ul>
                         <p>
-                            No use of d1gital j.d.o.o.'s logo or other artwork will
-                            be allowed for linking absent a trademark license
-                            agreement.
+                            Nijedna uporaba logotipa d1gital j.d.o.o. ili drugog umjetničkog djela neće biti dopuštena za povezivanje bez odsutnosti ugovora o licenciranju zaštitnog znaka.
                         </p>
-                        <h3><strong>iFrames</strong></h3>
+                        <h3><strong>iFrame-ovi</strong></h3>
                         <p>
-                            Without prior approval and written permission, you
-                            may not create frames around our Webpages that alter
-                            in any way the visual presentation or appearance of
-                            our Website.
+                            Bez prethodnog odobrenja i pismenog dopuštenja, ne možete stvarati okvire oko naših web stranica koji na bilo koji način mijenjaju vizualnu prezentaciju ili izgled naše web stranice.
                         </p>
-                        <h3><strong>Content Liability</strong></h3>
+                        <h3><strong>Odgovornost za sadržaj</strong></h3>
                         <p>
-                            We shall not be hold responsible for any content that
-                            appears on your Website. You agree to protect and
-                            defend us against all claims that is rising on your
-                            Website. No link(s) should appear on any Website
-                            that may be interpreted as libelous, obscene or
-                            criminal, or which infringes, otherwise violates, or
-                            advocates the infringement or other violation of,
-                            any third party rights.
+                            Nećemo biti odgovorni za bilo kakav sadržaj koji se pojavljuje na vašoj web stranici. Pristajete na zaštitu i zaštitu od svih zahtjeva koji se pojavljuju na vašoj web stranici. Nijedna se veza ne smije pojaviti na bilo kojoj web stranici koja se može protumačiti kao kleveta, opscena ili kriminalna ili koja krši, na drugi način krši ili zagovara kršenje ili neko drugo kršenje prava bilo koje treće strane.
                         </p>
-                        <h3><strong>Your Privacy</strong></h3>
-                        <p>Please read Privacy Policy</p>
-                        <h3><strong>Reservation of Rights</strong></h3>
+                        <h3><strong>Vaša privatnost</strong></h3>
+                        <p>Molimo pročitajte Pravila o privatnosti</p>
+                        <h3><strong>Rezervacija prava</strong></h3>
                         <p>
-                            We reserve the right to request that you remove all
-                            links or any particular link to our Website. You
-                            approve to immediately remove all links to our
-                            Website upon request. We also reserve the right to
-                            amen these terms and conditions and it’s linking
-                            policy at any time. By continuously linking to our
-                            Website, you agree to be bound to and follow these
-                            linking terms and conditions.
+                            Zadržavamo pravo zatražiti da uklonite sve poveznice ili bilo koju određenu poveznicu na našu web stranicu. Odobravate da ćete na zahtjev odmah ukloniti sve veze do naše web stranice. Također pridržavamo pravo na usklađivanje s ovim uvjetima i odredbama i to je povezivanje politike u bilo kojem trenutku. Neprekidnim povezivanjem s našom web stranicom pristajete na obvezu i poštivanje ovih odredbi i uvjeta povezivanja.
                         </p>
-                        <h3><strong>Removal of links from our website</strong>
+                        <h3><strong>Uklanjanje veza s naše web stranice</strong>
                         </h3>
                         <p>
-                            If you find any link on our Website that is offensive
-                            for any reason, you are free to contact and inform
-                            us any moment. We will consider requests to remove
-                            links but we are not obligated to or so or to
-                            respond to you directly.
+                            Ako na bilo kojem razlog nađete uvredljivu vezu na našoj web stranici, slobodno nas kontaktirajte i obavijestite u bilo kojem trenutku. Razmotrit ćemo zahtjeve za uklanjanje veza, ali nismo obvezni ili odgovoriti izravno na vas.
                         </p>
                         <p>
-                            We do not ensure that the information on this website
-                            is correct, we do not warrant its completeness or
-                            accuracy; nor do we promise to ensure that the
-                            website remains available or that the material on
-                            the website is kept up to date.
+                            Ne osiguravamo točnost podataka na ovom web mjestu, ne jamčimo njihovu cjelovitost ili točnost; niti obećavamo da ćemo osigurati da web stranica ostane dostupna ili da se materijal na web stranici ažurira.
                         </p>
-                        <h3><strong>Disclaimer</strong></h3>
+                        <h3><strong>Odricanje</strong></h3>
                         <p>
-                            To the maximum extent permitted by applicable law, we
-                            exclude all representations, warranties and
-                            conditions relating to our website and the use of
-                            this website. Nothing in this disclaimer will:
+                            U maksimalnoj mjeri dopuštenoj važećim zakonom, isključujemo sve izjave, jamstva i uvjete koji se odnose na našu web stranicu i upotrebu ove web stranice. Ništa u ovom odricanju odgovornosti neće:
                         </p>
                         <ul>
-                            <li>limit or exclude our or your liability for death
-                                or personal injury;
-                            </li>
-                            <li>limit or exclude our or your liability for fraud
-                                or fraudulent misrepresentation;
-                            </li>
-                            <li>limit any of our or your liabilities in any way
-                                that is not permitted under applicable law; or
-                            </li>
-                            <li>exclude any of our or your liabilities that may
-                                not be excluded under applicable law.
-                            </li>
+                            <li>ograničiti ili isključiti našu ili vašu odgovornost za smrt ili tjelesne ozljede;</li>
+                            <li>ograničiti ili isključiti našu ili vašu odgovornost za prijevaru ili lažno predstavljanje;</li>
+                            <li>ograničiti bilo koju od naših ili vaših obveza na bilo koji način koji nije dopušten važećim zakonom; ili</li>
+                            <li>isključiti bilo koju od naših ili vaših obveza koje možda neće biti isključene prema važećem zakonu.</li>
                         </ul>
                         <p>
-                            The limitations and prohibitions of liability set in
-                            this Section and elsewhere in this disclaimer: (a)
-                            are subject to the preceding paragraph; and (b)
-                            govern all liabilities arising under the disclaimer,
-                            including liabilities arising in contract, in tort
-                            and for breach of statutory duty.
+                            Ograničenja i zabrane odgovornosti utvrđene u ovom odjeljku i drugdje u ovom odricanju odgovornosti: (a) podliježu prethodnom stavku; i (b) upravljati svim obvezama koje proizlaze iz izjave o odricanju odgovornosti, uključujući obveze koje proizlaze iz ugovora, deliktom i zbog kršenja zakonske dužnosti.
                         </p>
                         <p>
-                            As long as the website and the information and
-                            services on the website are provided free of charge,
-                            we will not be liable for any loss or damage of any
-                            nature.
+                            Sve dok se web stranica i informacije i usluge na web stranici pružaju besplatno, nećemo biti odgovorni za bilo kakav gubitak ili štetu bilo koje prirode.
                         </p>
                     </div>
                 </v-col>

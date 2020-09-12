@@ -2,6 +2,7 @@
     <v-row
         align="center"
         justify="center"
+        class="not-found"
     >
         <v-col
             cols="12"
@@ -9,25 +10,33 @@
             md="4"
             class="text-center"
         >
-            <h1 id="title">404</h1>
-            <p id="subtitle">Page not found :(</p>
+
+            <p id="subtitle">
+                Stranica nije pronađena
+
+            </p>
+            <img
+                :src="require('@/assets/NotFound.png')"
+                width="40px"
+            />
+            <br><br>
             <v-btn
                 @click="$router.go(-1)"
-                depressed
-                large
                 color="grey"
                 class="mx-6"
+                depressed
+                large
             >
-                <span class="white--text">Go Back</span>
+                <span class="white--text">Idi nazad</span>
             </v-btn>
             <v-btn
                 @click="$router.push('/')"
-                depressed
-                large
                 color="primary"
                 class="mx-6"
+                depressed
+                large
             >
-                <span class="white--text">Home Page</span>
+                <span class="white--text">Početna stranica</span>
             </v-btn>
         </v-col>
     </v-row>
@@ -35,8 +44,9 @@
 
 <style>
 
-#title {
-    font-size: 64px;
+.not-found {
+    background: #fdfdfd;
+    border-bottom: 1px solid #d0d0d0;
 }
 
 #subtitle {
