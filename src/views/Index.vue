@@ -13,7 +13,7 @@
                 >
                     <h1
                         v-intersect="handleIntersect"
-                        class="header-color"
+                        class="header-title"
                         :class="{ 'header-font-size header-margins': $vuetify.breakpoint.smAndUp }"
                     >
                         Na pravom mjestu
@@ -384,13 +384,17 @@ export default {
     margin-left: 100px;
 }
 
-.header-color {
+.header-title {
+    font-size: 60px;
     color: #4285F4;
-
 }
 
 .header-font-size {
     font-size: 100px !important;
+}
+
+.header-sm-font-size {
+    font-size: 50px !important;
 }
 
 </style>
