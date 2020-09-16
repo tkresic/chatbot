@@ -7,42 +7,58 @@
         hide-on-scroll
         :style="{ 'z-index': 6 }"
     >
-        <template v-if="$vuetify.breakpoint.smAndUp">
-            <v-img
-                @click="$vuetify.goTo(0)"
-                :src="require('@/assets/Digital.png')"
-                max-width="150px"
-                max-height="150px"
-                alt="d1gital Logo"
-                class="cursor-pointer ml-16"
-            ></v-img>
-            <v-spacer></v-spacer>
-        </template>
         <template v-if="currentRouteName === 'index'">
-            <v-row :justify="$vuetify.breakpoint.smAndUp ? 'end' : 'center'">
+            <v-row
+                :justify="$vuetify.breakpoint.mdAndUp ? 'end' : 'center'"
+                align="center"
+            >
                 <v-col
-                    cols="auto"
+                    cols="3"
+                    class="text-center"
+                >
+                    <img
+                        @click="$vuetify.goTo(0)"
+                        :src="require('@/assets/Digital.png')"
+                        :width="$vuetify.breakpoint.mdAndUp ? '150px' : '50px'"
+                        alt="d1gital Logo"
+                        class="cursor-pointer"
+                        :class="{ 'ml-16' : $vuetify.breakpoint.mdAndUp }"
+                    />
+                </v-col>
+                <v-spacer v-if="$vuetify.breakpoint.smAndUp"></v-spacer>
+                <v-col
+                    :cols="$vuetify.breakpoint.mdAndUp ? 'auto' : '3'"
                     class="text-center"
                 >
                     <v-btn
                         @click="$vuetify.goTo('#about')"
-                        class="hover-animation app-bar-font-size text-uppercase mx-3 px-0"
+                        class="hover-animation app-bar-font-size text-uppercase  px-0"
                         :class="{ 'hover-animation-active': intersecting === 'about'}"
                         text
                     >
                         O nama
                     </v-btn>
+                </v-col>
+                <v-col
+                    :cols="$vuetify.breakpoint.mdAndUp ? 'auto' : '3'"
+                    class="text-center"
+                >
                     <v-btn
                         @click="$vuetify.goTo('#why-dooh')"
-                        class="hover-animation app-bar-font-size text-uppercase mx-3 px-0"
+                        class="hover-animation app-bar-font-size text-uppercase  px-0"
                         :class="{ 'hover-animation-active': intersecting === 'why-dooh'}"
                         text
                     >
                         Zašto DOOH
                     </v-btn>
+                </v-col>
+                <v-col
+                    :cols="$vuetify.breakpoint.mdAndUp ? 'auto' : '3'"
+                    class="text-center"
+                >
                     <v-btn
                         @click="$vuetify.goTo('#contact')"
-                        class="hover-animation app-bar-font-size text-uppercase mx-3 px-0"
+                        class="hover-animation app-bar-font-size text-uppercase  px-0"
                         :class="{ 'hover-animation-active': intersecting === 'contact', 'mr-16' : $vuetify.breakpoint.smAndUp }"
                         text
                     >
@@ -54,7 +70,7 @@
         <template v-else>
             <v-btn
                 @click.stop="$router.push('/')"
-                class="hover-animation app-bar-font-size text-uppercase"
+                class="hover-animation app-bar-font-size text-uppercase mx-3 px-0"
                 text
             >
                 Nazad na početnu
