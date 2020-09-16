@@ -22,8 +22,7 @@
                         <p>
                             Sljedeća se terminologija odnosi na ove Uvjete i odredbe, Izjavu o privatnosti i Obavijest o odricanju odgovornosti te na sve Ugovore: "Klijent", "Vi" i "Vaša" odnosi se na vas, osobu koja se prijavljuje na ovu web stranicu i u skladu s uvjetima i odredbama tvrtke. "Tvrtka", "Mi sami", "Mi", "Naši" i "Mi" odnosi se na našu tvrtku. "Stranka", "Stranke" ili "Mi" odnosi se i na Klijenta i na nas same. Svi se uvjeti odnose na ponudu, prihvaćanje i razmatranje plaćanja potrebnih za provođenje postupka pružanja naše pomoći Klijentu na najprikladniji način, izričito u svrhu zadovoljenja potreba Klijenta u pogledu pružanja navedenih usluga Društva, u skladu s i podliježe važećem zakonu Nizozemske. Svaka upotreba gornje terminologije ili drugih riječi u jednini, množini, pisanju velikih slova i / ili on / ona ili oni, uzimaju se kao zamjenjivi i prema tome odnose se na istu.
                         </p>
-                        <a name="politika-kolacica"></a>
-                        <h3><strong>Kolačići</strong></h3>
+                        <h3 id="politika-kolacica"><strong>Kolačići</strong></h3>
                         <p>
                             Zapošljavamo upotrebu kolačića. Pristupom D1GITALu pristali ste na upotrebu kolačića u skladu s Pravilima o privatnosti D1GITAL j.d.o.o..
                         </p>
@@ -129,8 +128,7 @@
                         <p>
                             Nećemo biti odgovorni za bilo kakav sadržaj koji se pojavljuje na vašoj web stranici. Pristajete na zaštitu i zaštitu od svih zahtjeva koji se pojavljuju na vašoj web stranici. Nijedna se veza ne smije pojaviti na bilo kojoj web stranici koja se može protumačiti kao kleveta, opscena ili kriminalna ili koja krši, na drugi način krši ili zagovara kršenje ili neko drugo kršenje prava bilo koje treće strane.
                         </p>
-                        <a name="politika-privatnosti"></a>
-                        <h3><strong>Vaša privatnost</strong></h3>
+                        <h3 id="politika-privatnosti"><strong>Vaša privatnost</strong></h3>
                         <p>Molimo pročitajte Pravila o privatnosti</p>
                         <h3><strong>Rezervacija prava</strong></h3>
                         <p>

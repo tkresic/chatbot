@@ -61,7 +61,7 @@
                     to="uvjeti-i-odredbe#politika-kolacica"
                     class="text-styling link font-weight-bold mb-0"
                 >
-                    Politika kolačića.
+                    Politika kolačića
                 </router-link>
             </v-col>
             <v-col
