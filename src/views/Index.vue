@@ -81,7 +81,7 @@
                 justify="center"
                 align="center"
                 class="navy-blue-section py-12"
-                :class="{ 'height-100vh' : $vuetify.breakpoint.smAndUp }"
+                :class="{ 'min-height-100vh' : $vuetify.breakpoint.smAndUp }"
             >
                 <v-col
                     cols="12"
@@ -308,6 +308,10 @@ export default {
 
 .height-100vh {
     height: 100vh;
+}
+
+.min-height-100vh {
+    min-height: 100vh;
 }
 
 .font-size-60px {
