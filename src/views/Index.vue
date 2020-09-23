@@ -2,9 +2,10 @@
     <v-row>
         <v-col class="py-0">
             <v-row
-                class="index-background height-100vh"
+                class="height-100vh"
                 justify="center"
                 :align="$vuetify.breakpoint.smAndUp ? 'start' : 'center'"
+                :class="{ 'index-background-1366x768': $vuetify.breakpoint.lgAndUp, 'index-background-1280x800': $vuetify.breakpoint.mdOnly, 'index-background-375x812': $vuetify.breakpoint.smAndDown }"
             >
                 <v-col
                     cols="12"
@@ -14,7 +15,7 @@
                     <h1
                         v-intersect="handleIntersect"
                         class="header-title"
-                        :class="{ 'header-font-size header-margins': $vuetify.breakpoint.smAndUp }"
+                        :class="{ 'header-font-size header-margins': $vuetify.breakpoint.mdAndUp, 'header-smaller-screens-margin': $vuetify.breakpoint.smAndDown }"
                     >
                         Na pravom mjestu
                     </h1>
@@ -30,7 +31,7 @@
                 <v-col
                     cols="12"
                     md="4"
-                    class="text-center text-md-left animation-class"
+                    class="text-center text-md-left animation-class mx-12"
                     :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
                     :order="$vuetify.breakpoint.mdAndUp ? 'first' : 'last'"
                     v-animate.fade="'slide-up'"
@@ -61,7 +62,7 @@
                     v-animate.fade="'slide-up'"
                     cols="12"
                     md="4"
-                    class="animation-class"
+                    class="animation-class mx-12"
                 >
                     <v-row class="justify-center">
                         <v-col
@@ -69,8 +70,8 @@
                             class="text-center"
                         >
                             <img
-                                :src="require('@/assets/Placeholder.png')"
-                                width="300px"
+                                :src="require('@/assets/index/About.jpg')"
+                                width="100%"
                             />
                         </v-col>
                     </v-row>
@@ -284,8 +285,19 @@ export default {
 
 <style lang="scss">
 
-.index-background {
-    background: url('../assets/index/Background.png')  no-repeat center;
+.index-background-1366x768 {
+    background: url('../assets/index/1366x768.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.index-background-1280x800 {
+    background: url('../assets/index/1280x800.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.index-background-375x812 {
+    background: url('../assets/index/375x812.png') no-repeat center;
+    background-size: 100% 100%;
 }
 
 .text-styling {
@@ -399,6 +411,10 @@ export default {
 
 .header-sm-font-size {
     font-size: 50px !important;
+}
+
+.header-smaller-screens-margin {
+    margin-bottom: 200px;
 }
 
 </style>
