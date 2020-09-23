@@ -33,7 +33,9 @@
                 </a>
                 <br/>
                 <p class="text-styling  mb-0">
-                    Majdanski put 6, Zagreb 10 000, Hrvatska
+                    Majdanski put 6,
+                    <br>
+                    10000 Zagreb, Hrvatska
                 </p>
             </v-col>
             <v-col
@@ -73,12 +75,14 @@
                 </p>
                 <v-btn
                     v-for="icon in icons"
-                    :key="icon"
+                    :key="icon.icon"
+                    :href="icon.link"
+                    target="_blank"
                     color="#4285F4"
                     class="mx-1"
                     icon
                 >
-                    <v-icon size="24px">{{ icon }}</v-icon>
+                    <v-icon size="24px">{{ icon.icon }}</v-icon>
                 </v-btn>
             </v-col>
         </v-row>
@@ -93,7 +97,12 @@ export default Vue.extend({
     name: 'Footer',
 
     data: () => ({
-        icons: ['facebook', 'mdi-linkedin', 'mdi-instagram', 'mdi-youtube'],
+        icons: [
+            { icon: 'facebook', link: 'https://www.facebook.com/D1gital-100660528471564'},
+            { icon: 'mdi-linkedin', link: 'https://www.instagram.com/d1gital.hr/'},
+            { icon: 'mdi-instagram', link: 'https://www.linkedin.com/company/d1gital/'},
+            { icon: 'mdi-youtube', link: 'https://www.youtube.com/channel/UC_T5nulIfqgrxD1LR-w1POQ'}
+        ],
     })
 });
 
