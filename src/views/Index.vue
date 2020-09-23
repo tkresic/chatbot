@@ -287,17 +287,17 @@ export default {
 
 .index-background-1366x768 {
     background: url('../assets/index/1366x768.png') no-repeat center;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .index-background-1280x800 {
     background: url('../assets/index/1280x800.png') no-repeat center;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .index-background-375x812 {
     background: url('../assets/index/375x812.png') no-repeat center;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .text-styling {
