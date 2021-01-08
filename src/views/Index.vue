@@ -2,266 +2,55 @@
     <v-row>
         <v-col class="py-0">
             <v-row
-                class="height-100vh"
+                class="height-100vh index-background-1366x768"
                 justify="center"
-                :align="$vuetify.breakpoint.smAndUp ? 'start' : 'center'"
-                :class="{ 'index-background-1366x768': $vuetify.breakpoint.lgAndUp, 'index-background-1280x800': $vuetify.breakpoint.mdOnly, 'index-background-375x812': $vuetify.breakpoint.smAndDown }"
+                align="center"
             >
                 <v-col
                     cols="12"
-                    class="text-center text-sm-left"
+                    class="text-center white--text"
 
                 >
-                    <h1
-                        v-intersect="handleIntersect"
-                        class="header-title"
-                        :class="{ 'header-font-size header-margins': $vuetify.breakpoint.mdAndUp, 'header-smaller-screens-margin': $vuetify.breakpoint.smAndDown }"
+                    <h1>Welcome to Zagreb Virtual Tourist Assistant!</h1>
+                    <h2>My name is Jax 🐿 and I'll be your host.</h2>
+                    <p class="white--text">
+                        Click the button below to start me up or the icon in the bottom right corner!
+                        <img
+                            :src="require('@/assets/index/Happy.png')"
+                            width="40px"
+                            style="position: relative; top: 5px; left: 5px;"
+                            alt="test"
+                        />
+                    </p>
+                    <v-btn
+                        @click="openWatson"
+                        color="purple darken-4"
+                        dark
                     >
-                        Na pravom mjestu
-                    </h1>
+                        Chat with me!
+                    </v-btn>
+                    <br><br>
+                    <i>
+                        <small>
+                            Hint: You can ask Jax about hotels, restaurants, museums, pubs, tours, parks... and much more!
+                        </small>
+                    </i>
                 </v-col>
             </v-row>
-            <v-row
-                id="about"
-                justify="center"
-                align="center"
-                class="py-12"
-                :class="{ 'height-100vh' : $vuetify.breakpoint.smAndUp }"
+            <v-btn
+                @click="startUp(false)"
+                id="btn-position"
+                color="purple darken-4"
+                fab
+                bottom
+                fixed
+                right
+                dark
             >
-                <v-col
-                    cols="12"
-                    md="4"
-                    class="text-center text-md-left animation-class mx-12"
-                    :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                    :order="$vuetify.breakpoint.mdAndUp ? 'first' : 'last'"
-                    v-animate.fade="'slide-up'"
-                >
-                    <h1
-                        v-intersect="handleIntersect"
-                        class="about"
-                    >
-                        O nama
-                    </h1>
-                    <p>
-                        D1GITAL je novi brend multimedijskog digitalnog oglašavanja u OOH (Out-Of-Home) industriji koji kroz vlastitu mrežu digitalnih billboarda širi vaše tržište.
-                    </p>
-                    <h4>
-                        Nije stvar veličine, stvar je preciznosti
-                    </h4>
-                    <p>
-                        Naša mreža billboarda raste, a od ključne je važnosti da vam nudimo oglašavanje na najatraktivnijim lokacijama u Zagrebu kako bismo vam osigurali najbolju uslugu.
-                    </p>
-                    <h4>
-                        Pratimo rezultate
-                    </h4>
-                    <p>
-                        Uz nas nije teško pratiti OOH rezultate. Svi naši digitalni billboardi su opremljeni kamerama koje omogućavaju mjerenje uspjeha vašeg oglašavanja
-                    </p>
-                </v-col>
-                <v-col
-                    v-animate.fade="'slide-up'"
-                    cols="12"
-                    md="4"
-                    class="animation-class mx-12"
-                >
-                    <v-row class="justify-center">
-                        <v-col
-                            cols="auto"
-                            class="text-center"
-                        >
-                            <img
-                                :src="require('@/assets/index/About.jpg')"
-                                width="100%"
-                            />
-                        </v-col>
-                    </v-row>
-                </v-col>
-            </v-row>
-            <v-row
-                id="why-dooh"
-                justify="center"
-                align="center"
-                class="navy-blue-section py-12"
-                :class="{ 'min-height-100vh' : $vuetify.breakpoint.smAndUp }"
-            >
-                <v-col
-                    cols="12"
-                    sm="6"
-                >
-                    <v-row
-                        justify="center"
-                        align="center"
-                    >
-                        <v-col
-                            v-animate.fade="'slide-up'"
-                            cols="auto"
-                            class="animation-class mx-6"
-                        >
-                            <img
-                                :src="require('@/assets/index/icons/Attraction.png')"
-                                width="60px"
-                            />
-                        </v-col>
-                        <v-col
-                            cols="12"
-                            sm="6"
-                            class="text-center text-sm-left animation-class mx-6"
-                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            v-animate.fade="'slide-up'"
-                        >
-                            <h1
-                                v-intersect="handleIntersect"
-                                class="why-dooh"
-                            >
-                                Atraktivnost
-                            </h1>
-                            <p class="white--text">
-                                Frekventne i atraktivne lokacije u Zagrebu osigurat će veliki doseg vaše digitalne kampanje.
-                            </p>
-                        </v-col>
-                    </v-row>
-                    <v-row
-                        justify="center"
-                        align="center"
-                    >
-                        <v-col
-                            v-animate.fade="'slide-up'"
-                            cols="auto"
-                            class="animation-class mx-6"
-                        >
-                            <img
-                                :src="require('@/assets/index/icons/Measurable.png')"
-                                width="60px"
-                            />
-                        </v-col>
-                        <v-col
-                            cols="12"
-                            sm="6"
-                            class="text-center text-sm-left animation-class mx-6"
-                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            v-animate.fade="'slide-up'"
-                        >
-                            <h1>Mjerljivost</h1>
-                            <p class="white--text">
-                                Kamere u kombinaciji s pametnim software rješenjima pružaju vam mogućnost mjerenje uspjeha.
-                            </p>
-                        </v-col>
-                    </v-row>
-                    <v-row
-                        justify="center"
-                        align="center"
-                    >
-                        <v-col
-                            v-animate.fade="'slide-up'"
-                            cols="auto"
-                            class="animation-class mx-6"
-                        >
-                            <img
-                                :src="require('@/assets/index/icons/Agile.png')"
-                                width="60px"
-                            />
-                        </v-col>
-                        <v-col
-                            cols="12"
-                            sm="6"
-                            class="text-center text-sm-left animation-class mx-6"
-                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            v-animate.fade="'slide-up'"
-                        >
-                            <h1>Agilnost</h1>
-                            <p class="white--text">
-                                Hands-on pristup i fokusiranost na uspjeh svakog našeg partnera omogućava vam ažuriranje kampanja, izmjenu kreative i brigu o vašoj promociji u svakom trenutku.
-                            </p>
-                        </v-col>
-                    </v-row>
-                </v-col>
-                <v-col
-                    cols="12"
-                    sm="6"
-                >
-                    <v-row
-                        justify="center"
-                        align="center"
-                    >
-                        <v-col
-                            v-animate.fade="'slide-up'"
-                            cols="auto"
-                            class="animation-class mx-6"
-                        >
-                            <img
-                                :src="require('@/assets/index/icons/Visible.png')"
-                                width="60px"
-                            />
-                        </v-col>
-                        <v-col
-                            cols="12"
-                            sm="6"
-                            class="text-center text-sm-left animation-class mx-6"
-                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            v-animate.fade="'slide-up'"
-                        >
-                            <h1>Uočljivost</h1>
-                            <p class="white--text">
-                                Digitalna reklama je budućnost. Dok drugi stoje, vi se pokrenite! Privucite pažnju svojeg tržišta.
-                            </p>
-                        </v-col>
-                    </v-row>
-                    <v-row
-                        justify="center"
-                        align="center"
-                    >
-                        <v-col
-                            v-animate.fade="'slide-up'"
-                            cols="auto"
-                            class="animation-class mx-6"
-                        >
-                            <img
-                                :src="require('@/assets/index/icons/Relevant.png')"
-                                width="60px"
-                            />
-                        </v-col>
-                        <v-col
-                            cols="12"
-                            sm="6"
-                            class="text-center text-sm-left animation-class mx-6"
-                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            v-animate.fade="'slide-up'"
-                        >
-                            <h1>Relevantnost</h1>
-                            <p class="white--text">
-                                Prilagodite svoje poruke prema dobu dana, vremenskim uvjetima ili bilo kojem drugom parametru, a mi ćemo ih isporučiti onda kada su najrelevantnije.
-                            </p>
-                        </v-col>
-                    </v-row>
-                    <v-row
-                        justify="center"
-                        align="center"
-                    >
-                        <v-col
-                            v-animate.fade="'slide-up'"
-                            cols="auto"
-                            class="animation-class mx-6"
-                        >
-                            <img
-                                :src="require('@/assets/index/icons/EcoFriendly.png')"
-                                width="60px"
-                            />
-                        </v-col>
-                        <v-col
-                            cols="12"
-                            sm="6"
-                            class="text-center text-sm-left animation-class mx-6"
-                            :class="{ 'px-8': $vuetify.breakpoint.mdAndDown }"
-                            v-animate.fade="'slide-up'"
-                        >
-                            <h1>Eco-Friendly</h1>
-                            <p class="white--text">
-                                Prelaskom s tradicionalnih na digitalne billboarde uklanja se otpad, voda, tinta i otapala potrebna za proizvodnju tiskanih natpisa, a samim time se smanjuje negativan utjecaj na okoliš.
-                            </p>
-                        </v-col>
-                    </v-row>
-                </v-col>
-            </v-row>
+                <v-icon>
+                    autorenew
+                </v-icon>
+            </v-btn>
         </v-col>
     </v-row>
 </template>
@@ -270,33 +59,79 @@
 
 export default {
 
-    props: ['intersecting'],
+    mounted() {
+        this.startUp(true);
+
+        document.addEventListener('click',function(e){
+            if(e.target && e.target.parentNode.id === 'WACLauncher__Button'){
+                document.getElementById("btn-position").style.display = "block";
+            } else if(e.target && e.target.nodeName === 'svg'){
+                document.getElementById("btn-position").style.display = "none";
+            }
+        });
+
+    },
 
     methods: {
-        handleIntersect(entries) {
-            if (entries[0].isIntersecting) {
-                this.$emit('update:intersecting', entries[0].target.className);
+        openWatson() {
+            document.getElementById("WACLauncher__Button").click();
+            document.getElementById("btn-position").style.display = "block";
+        },
+        startUp(startup) {
+            if (startup) {
+                this.realStartUp(startup)
+            } else {
+                var elements = document.getElementsByClassName("WatsonAssistantChatHost");
+                while(elements.length > 0){
+                    elements[0].parentNode.removeChild(elements[0]);
+                }
+                this.realStartUp(startup)
             }
+        },
+        realStartUp(startup) {
+            setTimeout(function(){
+                const t=document.createElement('script');
+                t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                document.head.appendChild(t);
+            });
+
+            window.watsonAssistantChatOptions = {
+                integrationID: "892c9893-f6e5-48e7-8af3-c7ce4437f2a7", // The ID of this integration.
+                region: "eu-de", // The region your integration is hosted in.
+                serviceInstanceID: "c2a0b736-3445-475c-8b05-299f6b79c10d", // The ID of your service instance.
+                onLoad: function(instance) {
+                    instance.render();
+                }
+            };
+
+            if (!startup) {
+                var app = this;
+                setTimeout(this.doIt, 300, app);
+            }
+        },
+        doIt(app) {
+            app.openWatson();
         }
     }
 
 };
+
 </script>
 
 <style lang="scss">
 
+#btn-position {
+    display: none;
+    right: 410px !important;
+    bottom: 30px !important;
+}
+
+.display-none {
+    display: none;
+}
+
 .index-background-1366x768 {
-    background: url('../assets/index/1366x768.png') no-repeat center;
-    background-size: cover;
-}
-
-.index-background-1280x800 {
-    background: url('../assets/index/1280x800.png') no-repeat center;
-    background-size: cover;
-}
-
-.index-background-375x812 {
-    background: url('../assets/index/375x812.png') no-repeat center;
+    background: url('../assets/index/Zagreb.png') no-repeat center;
     background-size: cover;
 }
 

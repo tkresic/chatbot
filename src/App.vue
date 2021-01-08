@@ -1,10 +1,5 @@
 <template>
     <v-app>
-        <ScrollToTop/>
-        <AppBar
-            :currentRouteName="$router.currentRoute.name"
-            :intersecting.sync="intersecting"
-        />
         <v-main class="background">
             <v-container
                 fluid
@@ -12,7 +7,7 @@
                 class="py-0"
             >
                 <v-layout justify-center>
-                    <router-view :intersecting.sync="intersecting"></router-view>
+                    <router-view></router-view>
                 </v-layout>
             </v-container>
         </v-main>
@@ -22,24 +17,24 @@
 
 <script>
 
-import Footer from '@/components/Footer.vue';
-import AppBar from '@/components/AppBar.vue';
-import ScrollToTop from '@/components/ScrollToTop.vue';
 
 export default {
 
-    components: {
-        Footer,
-        AppBar,
-        ScrollToTop,
-    },
+    mounted() {
 
-    data() {
-        return {
-            intersecting: null,
-        };
+        window.addEventListener('DOMContentLoaded', () => {
+            var divs = document.querySelectorAll('div');
+            for (var i = 0; i < divs.length; ++i) {
+                if (divs[i].getAttribute("style")) {
+                    if (divs[i].getAttribute("style").indexOf("z-index:") != -1) {
+                        divs[i].remove();
+                    }
+                }
+            }
+        });
     },
-};
+}
+
 
 </script>
 

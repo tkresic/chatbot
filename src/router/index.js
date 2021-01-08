@@ -2,7 +2,6 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Index from '../views/Index.vue';
 import NotFound from '../views/NotFound.vue';
-import TermsAndConditions from '../views/TermsAndConditions.vue';
 
 Vue.use(VueRouter);
 
@@ -11,11 +10,6 @@ const routes = [
     path: '/',
     name: 'index',
     component: Index
-  },
-  {
-    path: '/uvjeti-i-odredbe',
-    name: 'terms-and-conditions',
-    component: TermsAndConditions
   },
   {
     path: '/404',

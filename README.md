@@ -1,4 +1,4 @@
-# d1gital
+# Intelligent Systems
 
 ## Project setup
 ```
