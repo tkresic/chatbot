@@ -1,6 +1,8 @@
 # Intelligent Systems
 
-IBM Watson Assistant integrated into a website as a college project.
+IBM Watson Assistant integrated into a website as a college project. The ChatBot is hosted here:
+
+https://ints-chatbot.000webhostapp.com/
 
 ## Project setup
 ```
